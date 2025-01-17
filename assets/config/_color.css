@@ -1,0 +1,38 @@
+:root{
+
+    /* Color */
+
+    /* Black & White */
+
+    --black:#000000;
+    --white:#ffffff;
+
+    /* Palette*/
+
+    --blueOne:#E6FDFD;
+    --blueTwo:#98D2D2;
+    --blueThree:#5DA7A7;
+    --blueFour:#317D7D;
+    --blueFive:#125252;
+
+    /* Tones */
+
+    --toneOne:#F8F9FA;
+    --toneTwo:#E9ECEF;
+    --toneThree:#DEE2E6;
+    --toneFour:#CED4DA;
+    --toneFive:#ADB5BD;
+    --toneSix:#6C757D;
+    --toneSeven:#495057;
+    --toneEight:#343A40;
+    --toneNine:#212529;
+
+    /* Background */
+
+    --background:#f5f5f5;
+
+    /* Shadows */
+
+    --boxShadow:4px 4px 12px 1px var(--background);
+
+}

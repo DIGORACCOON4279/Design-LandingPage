@@ -1,0 +1,168 @@
+
+/* Header */
+
+/* header */
+
+.header{
+    /* display: none; */
+    width:100%;
+    height:auto;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9;
+    background-color:var(--white);
+    .containerHeader{
+        max-width:1300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin:auto;
+        .logoIcon{
+            width:auto;
+            .logo{
+                width:68px;
+            }
+        }
+        .navbar{
+            .menu{
+                width:auto;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5px;
+                li{
+                    width:max-content;
+                    list-style-type: none;
+                    .item{
+                        padding: 15px;
+                        text-decoration: none;
+                        color:var(--black);
+                        font-size:var(--mediumSize);
+                        font-weight:var(--mediumWeight);
+                        transition:0.3s ease-in-out;
+                        &:hover{
+                            color:var(--blueFour);
+                        }
+                    }
+                }
+                #optionsOne,
+                #optionsTwo{
+                    width:auto;
+                    position: relative;
+                    .item{
+                        display:flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 5px;
+                        color:var(--black);
+                        font-size:var(--mediumSize);
+                        font-weight:var(--mediumWeight);
+                        cursor:pointer;
+                        .optionItem{
+                            color:var(--black);
+                            transition:0.3s ease-in-out;
+                        }
+                        &:hover > .optionItem{
+                            color:var(--blueFour);
+                        }
+                        .iconArrow{
+                            transform:rotate(0deg);
+                            transition:transform 0.3s ease-in-out;
+                        }
+                    }
+                    &:hover > .item .iconArrow{
+                        transform:rotate(180deg);
+                    }
+                    .navbarMenuItemOne,
+                    .navbarMenuItemTwo {
+                        width: max-content;
+                        height: auto;
+                        border-radius:10px;
+                        position: absolute;
+                        top: 100%;
+                        /* box-shadow: var(--boxShadow); */
+                        background-color: var(--white);
+                        opacity: 0;
+                        margin-top: 1px;
+                        overflow: hidden;
+                        transform: scale(0%);
+                        transform-origin: left top;
+                        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                        .subitem {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            li {
+                                list-style-type: none;
+                                width: 150px; /* Ajustar el ancho dependiendo del texto en Link - Menú */
+                                .link {
+                                    display:flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    padding: 10px 25px 10px 15px;
+                                    text-decoration: none;
+                                    text-align: left;
+                                    white-space: nowrap;
+                                    color:var(--black);
+                                    font-size:var(--mediumSize);
+                                    font-weight:var(--regularWeight);
+                                    transition: background-color 0.3s ease-in-out;
+                                    &:hover {
+                                        color: var(--white);
+                                        background-color: var(--blueThree);
+                                    }
+                                    &:hover:after{
+                                        content:"✔";
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover > .navbarMenuItemOne,
+                    &:hover > .navbarMenuItemTwo{
+                        opacity:1;
+                        transform:scale(100%);
+                    }
+                }
+                .userBlock{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap:20px;
+                    margin-left: 30px;
+                    .register{
+                        width:100%;
+                        padding:10px 25px;
+                        background-color:var(--blueFour);
+                        text-align: center;
+                        text-decoration: none;
+                        color:var(--white);
+                        font-size:var(--lightSize);
+                        font-weight:var(--mediumWeight);
+                        border-radius: 10px;
+                        border:1px solid var(--blueTwo);
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            color:var(--black);
+                            background-color:var(--white);
+                            border:1px solid var(--black);
+                        }
+                    }
+                    .linkUserIcon{
+                        .iconUser{
+                            cursor:pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

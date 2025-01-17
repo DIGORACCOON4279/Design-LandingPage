@@ -1,0 +1,145 @@
+
+/* Container */
+
+/* Hero Section */
+
+.heroSection{
+    width:100%;
+    height:auto;
+    background-color: var(--black);
+    margin:50px auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .heroSectionContainer{
+        width:85%;
+        height:100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        .head{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap:15px;
+            .title{
+                color:var(--white);
+                font-size:var(--xxLargeSize);
+                font-weight:var(--mediumWeight);
+            }
+            .subtitle{
+                color:var(--toneThree);
+                font-size:var(--xLargeSize);
+                font-weight:var(--mediumWeight);
+            }
+            .ctas{
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap:10px;
+                .login,
+                .register{
+                    display: flex;
+                    width: 180px;
+                    height: 50px;
+                    padding: 15px 25px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    color:var(--black);
+                    font-size:var(--mediumSize);
+                    font-weight:var(--semiboldWeight);
+                    flex-shrink: 0;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    background-color:var(--white);
+                    transition:0.3s ease-in-out;
+                    &:hover{
+                        color:var(--white);
+                        background-color:var(--toneFive);
+                    }
+                }
+                .register{
+                    color:var(--white);
+                    background-color:var(--blueFour);
+                    &:hover{
+                        color:var(--black);
+                        background-color:var(--white);
+                    }
+                }
+            }
+        }
+        .bannerContainer {
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .bannerBlock {
+                /* width: 100%; */
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                transition: transform 0.5s ease-in-out;
+                /* width: calc(100% * 6); */
+                .banner {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 0 0 auto;
+                    flex-grow: 100%;
+                    .illustration {
+                        width: auto;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .navCtas {
+                /* position: absolute;
+                top: 80%; */
+                display: flex;
+                justify-content: space-between;
+                gap:10px;
+                /* transform: translateY(-50%); */
+                .cta{
+                    background-color:var(--black);
+                    color: var(--white);
+                    border: none;
+                    padding: 0px 15px;
+                    font-size: 35px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

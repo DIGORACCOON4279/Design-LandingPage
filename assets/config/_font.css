@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+
+    /* Font Style */
+
+    --font-family:"Quicksand", serif;
+
+    /* font Size */
+
+    --lightSize:0.8rem;
+    --regularSize:0.9rem;
+    --mediumSize:1rem;
+    --largeSize:1.3rem;
+    --xLargeSize:1.6rem;
+    --xxLargeSize:2.7rem;
+
+    /* font Weight */
+
+    --lightWeight:300;
+    --regularWeight:400;
+    --mediumWeight:500;
+    --semiboldWeight:600;
+    --boldWeight:700;
+
+}
