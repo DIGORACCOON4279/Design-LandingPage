@@ -6,10 +6,15 @@
 .heroSection{
     width:100%;
     height:auto;
+    background-image: url("/../img/backgroundHeroSection.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: var(--black);
     margin:50px auto 0px;
     display: flex;
     justify-content: center;
+
     align-items: center;
     .heroSectionContainer{
         width:85%;
@@ -27,6 +32,15 @@
             justify-content: center;
             align-items: flex-start;
             gap:15px;
+            .slogan{
+                color:var(--blueThree);
+                background-color:var(--backgroundOne);
+                font-size:var(--xLargeSize);
+                font-weight:var(--semiboldWeight);
+                padding: 5px;
+                border-radius: 5px;
+                transform:rotate(-4deg) translateY(15px);
+            }
             .title{
                 color:var(--white);
                 font-size:var(--xxLargeSize);
@@ -34,7 +48,7 @@
             }
             .subtitle{
                 color:var(--toneThree);
-                font-size:var(--xLargeSize);
+                font-size:var(--largeSize);
                 font-weight:var(--mediumWeight);
             }
             .ctas{
@@ -59,10 +73,15 @@
                     text-decoration: none;
                     border-radius: 10px;
                     background-color:var(--white);
-                    transition:0.3s ease-in-out;
+                    transform:scale(100%);
+                    transition: transform 0.3s ease-in-out;
                     &:hover{
                         color:var(--white);
+                        transform:scale(105%);
                         background-color:var(--toneFive);
+                    }
+                    &:hover:after{
+                        content:"❯";
                     }
                 }
                 .register{
@@ -70,6 +89,7 @@
                     background-color:var(--blueFour);
                     &:hover{
                         color:var(--black);
+                        transform:scale(105%);
                         background-color:var(--white);
                     }
                 }
@@ -107,14 +127,14 @@
                     }
                 }
             }
-            .navCtas {
+            .navArrows {
                 /* position: absolute;
                 top: 80%; */
                 display: flex;
                 justify-content: space-between;
                 gap:10px;
                 /* transform: translateY(-50%); */
-                .cta{
+                .arrow{
                     background-color:var(--black);
                     color: var(--white);
                     border: none;

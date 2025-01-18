@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentIndex = 0;
 
   // Selección de los elementos según las clases del proyecto bannerContainer
-  const prevArrow = document.querySelector('#prevCta'); // Flecha izquierda
-  const nextArrow = document.querySelector('#nextCta'); // Flecha derecha
+  const prevArrow = document.querySelector('#prevArrow'); // Flecha izquierda
+  const nextArrow = document.querySelector('#nextArrow'); // Flecha derecha
   const slider = document.querySelector('.bannerContainer .bannerBlock'); // Contenedor del carrusel
   const banners = document.querySelectorAll('.bannerContainer .bannerBlock .banner'); // Las imágenes
   const totalSlides = banners.length; // Total de imágenes
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Opcional: Mover automáticamente las diapositivas cada 5 segundos
   setInterval(() => {
       moveSlide(1);
-  }, 5000);
+  }, 8000);
 });
 
 
@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
 //   let currentIndex = 1; // Comenzamos en el primer slide visible (después del clon)
 
 //   // Selección de los elementos
-//   const prevArrow = document.querySelector('#prevCta');
-//   const nextArrow = document.querySelector('#nextCta');
+//   const prevArrow = document.querySelector('#prevArrow');
+//   const nextArrow = document.querySelector('#nextArrow');
 //   const slider = document.querySelector('.bannerContainer .bannerBlock');
 //   const banners = document.querySelectorAll('.bannerContainer .bannerBlock .banner');
 //   const totalSlides = banners.length;
