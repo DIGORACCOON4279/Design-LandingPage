@@ -28,21 +28,23 @@
             justify-content: flex-start;
             align-items: flex-start;
             position:relative;
+
             .illustrationsOptions{
                 width: 100%;
                 height:100%;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position:absolute;
+                overflow: hidden;
                 .illustration{
                     width: 100%;
                     height:100%;
                     object-fit: contain;
                     background-color: black;
-                    position: relative; /* o absolute, según la estructura */
-                    transition: z-index 0.3s ease-in-out;
+                    position: relative;
+                    opacity:1;
+                    transition: z-index 0.3s ease-in-out, opacity 0.3s ease-in-out;
                 }
             }
         }
