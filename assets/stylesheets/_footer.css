@@ -1,0 +1,11 @@
+
+/* Footer Section */
+
+.footerContainer{
+    width:100%;
+    height:auto;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--mediumSize);
+    font-weight: var(--semiboldWeight);
+}
