@@ -1,0 +1,100 @@
+
+/* Options Section */
+
+.optionSection{
+    width:100%;
+    height:auto;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin:50px auto;
+    .options{
+        width:85%;
+        max-width: 1150px;
+        height:90vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap:50px;
+        margin:50px auto;
+        .imageSliders{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            position:relative;
+            .illustrationsOptions{
+                position:absolute;
+                top:0;
+                .illustration{
+                    position: relative; /* o absolute, según la estructura */
+                    transition: z-index 0.3s ease-in-out;
+                }
+            }
+        }
+        .accordionInfo{
+            width:80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap:10px;
+            .accordion{
+                background-color: var(--toneNine);
+                padding:15px;
+                border-radius: 10px;
+                details{
+                    background-color: transparent;
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                    summary{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: transparent;
+                        border: none;
+                        padding: 0;
+                        cursor: pointer;
+                        list-style: none;
+                        &::-webkit-details-marker {
+                            display: none;
+                        }
+                        .ArrowDown {
+                            width: 24px;
+                            height: 24px;
+                            transition: transform 0.3s ease;
+                        }
+                        .option{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            .subtitle{
+                                color: var(--toneThree);
+                                font-size: var(--mediumSize);
+                                font-weight: var(--semiboldWeight);
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                    .info{
+                        color: var(--toneFive);
+                        font-size: var(--regularSize);
+                        font-weight: var(--semiboldWeight);
+                        padding-top: 10px;
+                        border-top: 1px solid var(--toneEight);
+                    }
+                    &[open] summary .ArrowDown {
+                        transform: rotate(180deg); /* Rota la flecha 180 grados cuando está abierto */
+                    }
+                }
+            }
+        }
+    }
+}
