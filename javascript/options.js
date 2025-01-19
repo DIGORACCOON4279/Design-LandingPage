@@ -4,10 +4,10 @@ const detailsElements = document.querySelectorAll('.accordion .details');
 // Definir las imágenes correspondientes a cada acordeón
 const images = [
     'img/optionOne.png', // Imagen para el primer acordeón
-    'img/illustrationTwo.png', // Imagen para el segundo acordeón
-    'img/illustrationThree.png', // Imagen para el tercer acordeón
-    'img/illustrationFour.png',
-    'img/illustrationSix.png'  // Imagen para el cuarto acordeón
+    'img/optionTwo.png', // Imagen para el segundo acordeón
+    'img/optionThree.png', // Imagen para el tercer acordeón
+    'img/optionFour.png',
+    'img/optionFive.png'  // Imagen para el cuarto acordeón
 ];
 
 // Imagen predeterminada para cuando todos los acordeones están cerrados

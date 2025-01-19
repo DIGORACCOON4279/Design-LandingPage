@@ -10,6 +10,14 @@
     align-items: center;
     overflow: hidden;
     margin:150px auto;
+    position: relative;
+    overflow: hidden;
+    .imagotipoMediumWhite{
+        position:absolute;
+        top:40px;
+        left:-25px;
+        transform:rotate(-30deg);
+    }
     .options{
         width:85%;
         max-width: 1150px;
