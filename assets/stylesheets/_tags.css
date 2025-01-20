@@ -1,31 +1,32 @@
 
 /* Container */
 
-/* Hero Section */
+/* Tag Section */
 
-.heroSection{
+.tagSection{
     width:100%;
     height:auto;
-    background-image: url("../../img/backgroundHeroSection.png");
+    /* background-image: url("");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     background-color: var(--black);
-    margin:50px auto 150px;
+    margin:150px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    .heroSectionContainer{
-        width:85%;
-        max-width: 1150px;
-        height:100vh;
+    .tagSectionContainer{
+        /* width:95%; */
+        max-width: 1300px;
+        height:auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin:0px auto 100px;
-        .head{
+        gap:50px;
+        margin:100px auto ;
+        .tagHead{
             width: 100%;
             height: auto;
             display: flex;
@@ -33,7 +34,7 @@
             justify-content: center;
             align-items: flex-start;
             gap:15px;
-            .slogan{
+            .tagSlogan{
                 color:var(--blueThree);
                 background-color:var(--backgroundOne);
                 font-size:var(--xLargeSize);
@@ -96,7 +97,7 @@
                 }
             }
         }
-        .bannerContainer {
+        .tagSlider {
             width: 100%;
             height: auto;
             position: relative;
@@ -105,23 +106,27 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            .bannerBlock {
-                /* width: 100%; */
+            .tagSliderBlock {
+                width:100%;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 justify-content: space-between;
                 align-items: center;
+                gap:20px ;
+                padding:25px;
                 transition: transform 0.5s ease-in-out;
-                /* width: calc(100% * 6); */
-                .banner {
-                    width: 100%;
+                .tagBanner {
+                    width:100%;
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
-                    flex: 0 0 auto;
-                    flex-grow: 100%;
-                    .imageHeroSection {
+                    transform:scale(100%);
+                    transition:transform 0.3s ease-in-out;
+                    &:hover{
+                        transform:scale(102%);
+                    }
+                    .imageTagSection {
                         width: auto;
                         height: auto;
                         object-fit: cover;
@@ -129,12 +134,10 @@
                 }
             }
             .navArrows {
-                /* position: absolute;
-                top: 80%; */
+                width:100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-end;
                 gap:10px;
-                /* transform: translateY(-50%); */
                 .arrow{
                     background-color:var(--black);
                     color: var(--white);
@@ -148,19 +151,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

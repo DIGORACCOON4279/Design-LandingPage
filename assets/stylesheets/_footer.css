@@ -12,13 +12,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding:100px 50px 20px;
     .sectionColumns{
         width:100%;
+        max-width: 1300px;
+        height:auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        margin:100px 50px 0px;
         padding-bottom:100px;
         border-bottom: 1px solid var(--toneEight);
         .column{
@@ -105,7 +107,7 @@
                             font-weight: var(--semiboldWeight);
                             padding:10px 15px;
                             border-radius: 5px;
-                            background-color: var(--toneTwo);
+                            background-color: var(--toneOne);
                             border:1px solid var(--toneTwo);
                         }
                     }
@@ -129,11 +131,12 @@
     }
     .sectionRow{
         width:100%;
+        max-width: 1300px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding:20px 0px 0px;
+        padding:20px 0px;
         .copyRight{
             display: flex;
             flex-direction: row;

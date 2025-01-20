@@ -7,7 +7,8 @@ const images = [
     'img/optionTwo.png', // Imagen para el segundo acordeón
     'img/optionThree.png', // Imagen para el tercer acordeón
     'img/optionFour.png',
-    'img/optionFive.png'  // Imagen para el cuarto acordeón
+    'img/optionFive.png', // Imagen para el cuarto acordeón
+    'img/optionSix.png',  // Imagen para el cuarto acordeón
 ];
 
 // Imagen predeterminada para cuando todos los acordeones están cerrados
