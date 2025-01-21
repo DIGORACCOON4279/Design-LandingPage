@@ -48,19 +48,22 @@
                 transform:rotate(-4deg) translateY(15px);
             }
             .title{
+                width: 65%;
                 color:var(--white);
                 font-size:var(--xxLargeSize);
                 font-weight:var(--mediumWeight);
             }
             .subtitle{
+                width: 65%;
                 color:var(--toneThree);
                 font-size:var(--largeSize);
                 font-weight:var(--mediumWeight);
             }
             .ctas{
+                width: 65%;
                 display:flex;
                 flex-direction: row;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 gap:10px;
                 .login,
@@ -83,7 +86,7 @@
                     transition: transform 0.3s ease-in-out;
                     &:hover{
                         color:var(--white);
-                        transform:scale(105%);
+                        transform:scale(102%);
                         background-color:var(--toneFive);
                     }
                     &:hover:after{
@@ -95,7 +98,7 @@
                     background-color:var(--blueFour);
                     &:hover{
                         color:var(--black);
-                        transform:scale(105%);
+                        transform:scale(102%);
                         background-color:var(--white);
                     }
                 }

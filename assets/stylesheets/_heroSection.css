@@ -78,7 +78,7 @@
                     transition: transform 0.3s ease-in-out;
                     &:hover{
                         color:var(--white);
-                        transform:scale(105%);
+                        transform:scale(102%);
                         background-color:var(--toneFive);
                     }
                     &:hover:after{
@@ -90,7 +90,7 @@
                     background-color:var(--blueFour);
                     &:hover{
                         color:var(--black);
-                        transform:scale(105%);
+                        transform:scale(102%);
                         background-color:var(--white);
                     }
                 }
