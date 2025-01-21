@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Opcional: Mover automáticamente las diapositivas cada 3 segundos
-    // setInterval(() => {
-    //     moveSlide(1);
-    // }, 8000);
+    setInterval(() => {
+        moveSlide(1);
+    }, 5000);
 });
