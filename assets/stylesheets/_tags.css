@@ -18,7 +18,7 @@
     overflow: hidden;
     .arrowRightCircle{
         fill: red;
-background-color: transparent;
+        background-color: transparent;
     }
     .tagSectionContainer{
         /* width:95%; */
@@ -121,22 +121,220 @@ background-color: transparent;
                 padding:25px;
                 transition: transform 0.5s ease-in-out;
                 .tagBanner {
-                    width:100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    transform:scale(100%);
-                    transition:transform 0.3s ease-in-out;
+                    width:auto;
+                    height: auto;
+                    border-radius:20px;
+                    transition: 0.3s ease-in-out;
                     &:hover{
-                        transform:scale(102%);
+                        background-color:var(--varietyOne);
+
                     }
-                    .imageTagSection {
-                        width: auto;
-                        height: auto;
-                        object-fit: cover;
+                    .div{
+                        width:280px;
+                        height:480px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        background-color: var(--toneTen);
                         border-radius: 20px;
+                        color:var(--);
+                        font-size:var(--);
+                        font-weight:var(--);
+                        padding:15px;
+                        position:relative;
+                        overflow: hidden;
+                        .spot{
+                            position:absolute;
+                            top:-35%;
+                            left:-55%;
+                        }
+                        .headerImages{
+                            width:90%;
+                            position:absolute;
+                            top:0%;
+                            left:10px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        .bodyInfo{
+                            margin-top:100px;
+                            z-index: 1;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap:10px;
+                            .area{
+                                /* color:var(--toneTwo); */
+                                font-size:var(--lightSize);
+                                font-weight:var(--regularWeight);
+                                border-radius: 5px;
+                                padding:5px;
+                                transform:rotate(-4deg);
+                            }
+                            .areaOne{
+                                color:var(--colorVarietyOne);
+                                background-color:var(--varietyOne);
+                            }
+                            .areaTwo{
+                                color:var(--colorVarietyTwo);
+                                background-color:var(--varietyTwo);
+                            }
+                            .areaThree{
+                                color:var(--colorVarietyThree);
+                                background-color:var(--varietyThree);
+                            }
+                            .areaFour{
+                                color:var(--colorVarietyFour);
+                                background-color:var(--varietyFour);
+                            }
+                            .areaFive{
+                                color:var(--colorVarietyFive);
+                                background-color:var(--varietyFive);
+                            }
+                            .areaSix{
+                                color:var(--colorVarietySix);
+                                background-color:var(--varietySix);
+                            }
+                            .areaSeven{
+                                color:var(--colorVarietySeven);
+                                background-color:var(--varietySeven);
+                            }
+                            .areaEight{
+                                color:var(--colorVarietyEight);
+                                background-color:var(--varietyEight);
+                            }
+                            .titleCard{
+                                color:var(--toneThree);
+                                font-size:var(--largeSize);
+                                font-weight:var(--semiboldWeight);
+                            }
+                            .paragraph{
+                                color:var(--toneFive);
+                                font-size:var(--regularSize);
+                                font-weight:var(--mediumWeight);
+                            }
+                            .iconItems{
+                                width:100%;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap:10px;
+                                .linkIcon{
+                                    .iconItem{
+                                        width:20px;
+                                    }
+                                }
+                            }
+                            /* .markArea{
+                                font-size:var(--smallSize);
+                                font-weight:var(--mediumWeight);
+                                padding:8px 25px;
+                                border-radius: 10px;
+                            }
+                            .markAreaOne{
+                                color:var(--colorVarietyOne);
+                                background-color:var(--varietyOne) ;
+                            }
+                            .markAreaTwo{
+                                color:var(--colorVarietyTwo);
+                                background-color:var(--varietyTwo) ;
+                            }
+                            .markAreaThree{
+                                color:var(--colorVarietyThree);
+                                background-color:var(--varietyThree) ;
+                            }
+                            .markAreaFour{
+                                color:var(--colorVarietyFour);
+                                background-color:var(--varietyFour) ;
+                            }
+                            .markAreaFive{
+                                color:var(--colorVarietyFive);
+                                background-color:var(--varietyFive) ;
+                            }
+                            .markAreaSix{
+                                color:var(--colorVarietySix);
+                                background-color:var(--varietySix) ;
+                            }
+                            .markAreaSeven{
+                                color:var(--colorVarietySeven);
+                                background-color:var(--varietySeven) ;
+                            }
+                            .markAreaEight{
+                                color:var(--colorVarietyEight);
+                                background-color:var(--varietyEight) ;
+                            }*/
+                        }
+                        .simbolBackground{
+                            position:absolute;
+                            bottom:0%;
+                            right:-50%;
+                        }
+                        .footerCard{
+                            width:100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap:10px;
+                            margin-bottom: 10px;
+                            .bunchPeople{
+                                width:auto;
+                            }
+                            .ctaTag{
+                                width:auto;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content:flex-end;
+                                align-items: center;
+                                gap:5px;
+                                font-size:var(--regularSize);
+                                font-weight:var(--mediumWeight);
+                                text-decoration: none;
+                                z-index: 1;
+                                .arrowRightCircle{
+                                    transform: translate(0px);
+                                    transition:transform 0.3s ease-in-out;
+                                }
+                                &:hover > .arrowRightCircle{
+                                    transform: translate(5px);
+                                }
+                            }
+                            .ctaTagOne{
+                                color:var(--colorVarietyOne);
+                            }
+                            .ctaTagTwo{
+                                color:var(--colorVarietyTwo);
+                            }
+                            .ctaTagThree{
+                                color:var(--colorVarietyThree);
+                            }
+                            .ctaTagFour{
+                                color:var(--colorVarietyFour);
+                            }
+                            .ctaTagFive{
+                                color:var(--colorVarietyFive);
+                            }
+                            .ctaTagSix{
+                                color:var(--colorVarietySix);
+                            }
+                            .ctaTagSeven{
+                                color:var(--colorVarietySeven);
+                            }
+                            .ctaTagEight{
+                                color:var(--colorVarietyEight);
+                            }
+                        }
+                        .imageTagSection {
+                            width: auto;
+                            height: auto;
+                            object-fit: cover;
+                            border-radius: 20px;
+                        }
                     }
+
                 }
             }
             .navArrows {

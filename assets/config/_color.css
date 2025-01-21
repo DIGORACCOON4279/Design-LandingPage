@@ -37,4 +37,25 @@
 
     --boxShadow:4px 4px 12px 1px var(--background);
 
+    /* Variety */
+
+    --varietyOne:#16f7ff15;
+    --varietyTwo:#8C82E815;
+    --varietyThree:#17A1FA15;
+    --varietyFour:#FEB93915;
+    --varietyFive:#F5192415;
+    --varietySix:#9647FF15;
+    --varietySeven:#62ADAD15;
+    --varietyEight:#15FF1D15;
+
+    --colorVarietyOne:#5DA7A7;
+    --colorVarietyTwo:#8C82E8;
+    --colorVarietyThree:#17A1FA;
+    --colorVarietyFour:#FEB939;
+    --colorVarietyFive:#F51924;
+    --colorVarietySix:#9647FF;
+    --colorVarietySeven:#62ADAD;
+    --colorVarietyEight:#15FF1D;
+
 }
+
