@@ -171,9 +171,9 @@
                             background-color:var(--white);
                             border:1px solid var(--black);
                         }
-                        &:hover:after{
+                        /* &:hover:after{
                             content:"❯";
-                        }
+                        } */
                     }
                     .linkUserIcon{
                         .iconUser{
