@@ -119,16 +119,12 @@
                 align-items: center;
                 gap:20px ;
                 padding:25px;
-                transition: transform 0.5s ease-in-out;
                 .tagBanner {
                     width:auto;
                     height: auto;
                     border-radius:20px;
-                    transition: 0.3s ease-in-out;
-                    &:hover{
-                        background-color:var(--varietyOne);
-
-                    }
+                    background-color: var(--toneTen);
+                    transition: background .3s ease-in-out;
                     .div{
                         width:280px;
                         height:480px;
@@ -136,18 +132,16 @@
                         flex-direction: column;
                         justify-content: space-between;
                         align-items: flex-start;
-                        background-color: var(--toneTen);
                         border-radius: 20px;
-                        color:var(--);
-                        font-size:var(--);
-                        font-weight:var(--);
                         padding:15px;
                         position:relative;
                         overflow: hidden;
                         .spot{
+                            display:flex;
                             position:absolute;
                             top:-35%;
                             left:-55%;
+                            transition: 0.5s ease-in-out;
                         }
                         .headerImages{
                             width:90%;
@@ -334,7 +328,6 @@
                             border-radius: 20px;
                         }
                     }
-
                 }
             }
             .navArrows {
