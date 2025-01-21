@@ -119,12 +119,21 @@
                 align-items: center;
                 gap:20px ;
                 padding:25px;
+                transition: transform 0.5s ease-in-out;
                 .tagBanner {
                     width:auto;
                     height: auto;
                     border-radius:20px;
                     background-color: var(--toneTen);
-                    transition: background .3s ease-in-out;
+                    border:3px solid transparent;
+                    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+                    ;
+                    &:hover .div .spot {
+                        opacity: 1;
+                        visibility: visible;
+                        filter: brightness(1.5);
+                        transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+                    }
                     .div{
                         width:280px;
                         height:480px;
@@ -137,11 +146,13 @@
                         position:relative;
                         overflow: hidden;
                         .spot{
-                            display:flex;
                             position:absolute;
                             top:-35%;
                             left:-55%;
-                            transition: 0.5s ease-in-out;
+                            opacity: 0;
+                            visibility: hidden;
+                            filter: brightness(0.5);
+                            transition: top 0.3s ease-in-out, left 0.3s ease-in-out, opacity 0.3s ease-in-out, filter 0.3s ease-in-out, visibility 0s linear 0.3s;
                         }
                         .headerImages{
                             width:90%;
@@ -222,44 +233,6 @@
                                     }
                                 }
                             }
-                            /* .markArea{
-                                font-size:var(--smallSize);
-                                font-weight:var(--mediumWeight);
-                                padding:8px 25px;
-                                border-radius: 10px;
-                            }
-                            .markAreaOne{
-                                color:var(--colorVarietyOne);
-                                background-color:var(--varietyOne) ;
-                            }
-                            .markAreaTwo{
-                                color:var(--colorVarietyTwo);
-                                background-color:var(--varietyTwo) ;
-                            }
-                            .markAreaThree{
-                                color:var(--colorVarietyThree);
-                                background-color:var(--varietyThree) ;
-                            }
-                            .markAreaFour{
-                                color:var(--colorVarietyFour);
-                                background-color:var(--varietyFour) ;
-                            }
-                            .markAreaFive{
-                                color:var(--colorVarietyFive);
-                                background-color:var(--varietyFive) ;
-                            }
-                            .markAreaSix{
-                                color:var(--colorVarietySix);
-                                background-color:var(--varietySix) ;
-                            }
-                            .markAreaSeven{
-                                color:var(--colorVarietySeven);
-                                background-color:var(--varietySeven) ;
-                            }
-                            .markAreaEight{
-                                color:var(--colorVarietyEight);
-                                background-color:var(--varietyEight) ;
-                            }*/
                         }
                         .simbolBackground{
                             position:absolute;
@@ -327,6 +300,54 @@
                             object-fit: cover;
                             border-radius: 20px;
                         }
+                    }
+                }
+                .tagBannerOne {
+                    &:hover {
+                        border:3px solid var(--varietyOne);
+                        background-color: var(--varietyOne);
+                    }
+                }
+                .tagBannerTwo {
+                    &:hover {
+                        border:3px solid var(--varietyTwo);
+                        background-color: var(--varietyTwo);
+                    }
+                }
+                .tagBannerThree {
+                    &:hover {
+                        border:3px solid var(--varietyThree);
+                        background-color: var(--varietyThree);
+                    }
+                }
+                .tagBannerFour {
+                    &:hover {
+                        border:3px solid var(--varietyFour);
+                        background-color: var(--varietyFour);
+                    }
+                }
+                .tagBannerFive {
+                    &:hover {
+                        border:3px solid var(--varietyFive);
+                        background-color: var(--varietyFive);
+                    }
+                }
+                .tagBannerSix {
+                    &:hover {
+                        border:3px solid var(--varietySix);
+                        background-color: var(--varietySix);
+                    }
+                }
+                .tagBannerSeven {
+                    &:hover {
+                        border:3px solid var(--varietySeven);
+                        background-color: var(--varietySeven);
+                    }
+                }
+                .tagBannerEight {
+                    &:hover {
+                        border:3px solid var(--varietyEight);
+                        background-color: var(--varietyEight);
                     }
                 }
             }
