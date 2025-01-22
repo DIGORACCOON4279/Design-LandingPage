@@ -23,15 +23,16 @@
         top:0px;
         .wrappedBlock{
             width:100%;
-            height:auto;
+            height:550px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             position: sticky;
             top:0px;
             padding:10px;
             overflow: hidden;
+            border-radius: 20px;
             .wrapCard{
                 display: flex;
                 flex-direction: column;
@@ -53,6 +54,7 @@
                         height:400px;
                         padding:10px;
                         align-self: self-start;
+                        border-radius: 20px;
                     }
                     .lorem{
                         width:100%;
@@ -92,6 +94,7 @@
             background-color: rgb(226, 55, 43);
             z-index:5;
         }
+
     }
 }
 
