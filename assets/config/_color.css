@@ -35,7 +35,8 @@
 
     /* Shadows */
 
-    --boxShadow:4px 4px 12px 1px var(--background);
+    --boxShadowOne:4px 4px 12px 1px var(--background);
+    --boxShadowTwo:4px 4px 24px 2px var(--background);
 
     /* Variety */
 
@@ -62,6 +63,6 @@
     FEB939
     62ADAD
     15FF1D */
-    
+
 }
 
