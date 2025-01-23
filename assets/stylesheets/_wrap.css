@@ -156,6 +156,19 @@
             z-index:1;
             /* background-color: var(--colorVarietyOne); */
             background-image: url("../../img/backgroundWrap1.png");
+            .wrapCard{
+                .wrapInfo{
+                    .wrapParagraph{
+                        color:var(--colorVarietyOne);
+                        background-color:var(--varietyOne);
+                    }
+                    .wrapCta{
+                        &:hover{
+                            color:var(--colorVarietyOne);
+                        }
+                    }
+                }
+            }
         }
         .wrappedBlockTwo{
             top:70px;
@@ -163,14 +176,39 @@
             z-index:2;
             /* background-color: var(--colorVarietySix); */
             background-image: url("../../img/backgroundWrap2.png");
+            .wrapCard{
+                .wrapInfo{
+                    .wrapParagraph{
+                        color:var(--colorVarietySix);
+                        background-color:var(--varietySix);
+                    }
+                    .wrapCta{
+                        &:hover{
+                            color:var(--colorVarietySix);
+                        }
+                    }
+                }
+            }
         }
         .wrappedBlockThree{
             top:85px;
             left:0;
             z-index:3;
             /* background-color: var(--colorVarietyFour); */
-
             background-image: url("../../img/backgroundWrap3.png");
+            .wrapCard{
+                .wrapInfo{
+                    .wrapParagraph{
+                        color:var(--colorVarietyFour);
+                        background-color:var(--varietyFour);
+                    }
+                    .wrapCta{
+                        &:hover{
+                            color:var(--colorVarietyFour);
+                        }
+                    }
+                }
+            }
         }
         .wrappedBlockFour{
             top:100px;
@@ -179,14 +217,39 @@
             /* background-color: var(--colorVarietySeven); */
 
             background-image: url("../../img/backgroundWrap4.png");
+            .wrapCard{
+                .wrapInfo{
+                    .wrapParagraph{
+                        color:var(--colorVarietySeven);
+                        background-color:var(--varietySeven);
+                    }
+                    .wrapCta{
+                        &:hover{
+                            color:var(--colorVarietySeven);
+                        }
+                    }
+                }
+            }
         }
         .wrappedBlockFive{
             top:115px;
             left:0;
             z-index:5;
             /* background-color: var(--colorVarietyEight); */
-
             background-image: url("../../img/backgroundWrap5.png");
+            .wrapCard{
+                .wrapInfo{
+                    .wrapParagraph{
+                        color:var(--colorVarietyEight);
+                        background-color:var(--varietyEight);
+                    }
+                    .wrapCta{
+                        &:hover{
+                            color:var(--colorVarietyEight);
+                        }
+                    }
+                }
+            }
         }
     }
 }
