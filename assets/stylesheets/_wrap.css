@@ -136,7 +136,7 @@
                         &:hover ~ .squareBunch{
                             opacity:1;
                             visibility:visible;
-                            transform:translate(0%);
+                            transform:scale(100%);
                         }
                     }
                     .squareBunch{
@@ -144,7 +144,7 @@
                         opacity:0;
                         visibility:hidden;
                         transform-origin: bottom right;
-                        transform:translate(-100%);
+                        transform:scale(0%);
                         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
                     }
                 }
@@ -154,30 +154,38 @@
             top:55px;
             left:0;
             z-index:1;
+            /* background-color: var(--colorVarietyOne); */
             background-image: url("../../img/backgroundWrap1.png");
         }
         .wrappedBlockTwo{
             top:70px;
             left:0;
             z-index:2;
+            /* background-color: var(--colorVarietySix); */
             background-image: url("../../img/backgroundWrap2.png");
         }
         .wrappedBlockThree{
             top:85px;
             left:0;
             z-index:3;
+            /* background-color: var(--colorVarietyFour); */
+
             background-image: url("../../img/backgroundWrap3.png");
         }
         .wrappedBlockFour{
             top:100px;
             left:0;
             z-index:4;
+            /* background-color: var(--colorVarietySeven); */
+
             background-image: url("../../img/backgroundWrap4.png");
         }
         .wrappedBlockFive{
             top:115px;
             left:0;
             z-index:5;
+            /* background-color: var(--colorVarietyEight); */
+
             background-image: url("../../img/backgroundWrap5.png");
         }
     }
