@@ -124,11 +124,11 @@
                         .arrowTopRight{
                             width:auto;
                             height:auto;
-                            transform:translate(0px, 0px);
+                            transform:translate(0px, 0px) scale(85%);
                             transition:transform 0.3s ease-in-out;
                         }
                         &:hover .arrowTopRight{
-                            transform:translate(5px, -2px);
+                            transform:translate(5px, -2px) scale(100%);
                         }
                         &:hover{
                             color:var(--colorVarietyOne);
