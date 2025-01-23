@@ -65,7 +65,7 @@
                     align-items: flex-start;
                     gap:10px;
                     overflow: hidden;
-                    background-color: rgba(41, 41, 41, 0.15);
+                    background-color: #29292926;
                     backdrop-filter: blur(10px);
                     border-radius: 20px;
                     padding: 30px;
@@ -77,11 +77,7 @@
                     .wrapParagraph{
                         width:max-content;
                         align-self: left;
-                        color:var(--colorVarietyOne);
-                        font-size:var(--xMediumSize);
-                        font-weight:var(--mediumWeight);
                         transform:rotate(-4deg) ;
-                        background-color: var(--varietyOne);
                         padding: 5px;
                         border-radius: 5px;
                     }
