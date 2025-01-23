@@ -18,15 +18,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 50px;
         margin:auto;
         position:relative;
         top:0px;
         .wrappedBlock{
             width:100%;
             height:550px;
+            /* height:calc(100vh - 120px); */
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             position: sticky;
             top:0px;
@@ -34,32 +35,89 @@
             overflow: hidden;
             border-radius: 20px;
             .wrapCard{
+                width:85%;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
-                align-items: center;
-                .subtitle{
+                align-items: flex-start;
+                gap:50px;
+                .imagesBackground{
                     width:100%;
-                    padding: 0px 10px;
-                    text-align: left;
+                    height:450px;
+                    padding:10px;
+                    align-self: self-start;
+                    border-radius: 20px;
                 }
-                .blockInfo{
+                .wrapInfo{
                     width:100%;
                     display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    .imagesBackground{
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap:10px;
+                    .wrapParagraph{
                         width:100%;
-                        height:400px;
-                        padding:10px;
-                        align-self: self-start;
-                        border-radius: 20px;
+                        text-align: left;
                     }
-                    .lorem{
-                        width:100%;
-                        padding:10px;
+                    .wrapParagraph{
+                        width:max-content;
                         align-self: left;
+                        color:var(--colorVarietyOne);
+                        font-size:var(--xMediumSize);
+                        font-weight:var(--mediumWeight);
+                        transform:rotate(-4deg) ;
+                        background-color: var(--varietyOne);
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+                    .blockInfo{
+                        width:100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap:20px;
+                        .wrapTitle{
+                            width:100%;
+                            align-self: left;
+                            color:var(--toneTwo);
+                            font-size:var(--xLargeSize);
+                            font-weight:var(--semiboldWeight);
+                        }
+                        .lorem{
+                            width:100%;
+                            align-self: left;
+                            color:var(--toneFour);
+                            font-size:var(--mediumSize);
+                            font-weight:var(--regularWeight);
+                        }
+                    }
+                    .wrapCta{
+                        width:max-content;
+                        align-self: left;
+                        color:var(--toneOne);
+                        font-size:var(--mediumSize);
+                        font-weight:var(--semiboldWeight);
+                        margin-top:10px;
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap:5px;
+                        transition: color 0.3s ease-in-out;
+                        .arrowTopRight{
+                            width:auto;
+                            height:auto;
+                            transform:translate(0px, 0px);
+                            transition:transform 0.3s ease-in-out;
+                        }
+                        &:hover .arrowTopRight{
+                            transform:translate(5px, -2px);
+                        }
+                        &:hover{
+                            color:var(--colorVarietyOne);
+                        }
                     }
                 }
             }
@@ -68,7 +126,8 @@
             top:55px;
             left:0;
             z-index:1;
-            background-color: rgb(226, 208, 43);
+            background-color: #62adad;
+            background-image: url("../../img/frame 15.png");
         }
         .wrappedBlockTwo{
             top:70px;
