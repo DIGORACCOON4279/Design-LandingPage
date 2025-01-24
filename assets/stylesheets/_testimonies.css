@@ -179,9 +179,11 @@
                         justify-content: center;
                         align-items: center;
                         gap:5px;
-                        .iconNetwork{
-                            width:20px;
-                            height:auto;
+                        .network{
+                            .iconNetwork{
+                                width:20px;
+                                height:auto;
+                            }
                         }
                     }
                 }
@@ -232,57 +234,60 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap:30px;
-                padding:20px;
+                /* padding:20px; */
                 .details{
+                    width:100%;
                     background-color: transparent;
                     border: none;
                     margin: 0;
                     padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-end;
                     .summary{
                         width:100%;
                         display: flex;
-                        flex-direction: row;
                         justify-content: space-between;
                         align-items: center;
-                        background-color: transparent;
+                        /* background-color: purple; */
                         border: none;
-                        padding: 15px;
+                        padding: 10px 20px;
                         cursor: pointer;
                         list-style: none;
                         &::-webkit-details-marker {
                             display: none;
                         }
-                        .arrowDown {
-                            width: 32px;
-                            height: 32px;
-                            transition: transform 0.3s ease;
-                        }
                         .option{
                             width:100%;
+                            height:auto;
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
                             align-items: center;
-                            .subtitle{
+                            /* background-color: red; */
+                            .options{
                                 width:100%;
                                 color: var(--toneThree);
                                 font-size: var(--mediumSize);
                                 font-weight: var(--semiboldWeight);
-                                padding-bottom: 10px;
+                            }
+                            .arrowDown {
+                                width: 32px;
+                                height: 32px;
+                                background-color: transparent;
+                                border-radius:50%;
+                                padding:5px;
+                                transition:background-color 0.3s ease-in-out, transform 0.3s ease ;
+                                &:hover{
+                                    background-color: var(--toneNine);
+                                }
                             }
                         }
                     }
-                    .info{
-                        width:100%;
-                        color: var(--toneFive);
-                        font-size: var(--regularSize);
-                        font-weight: var(--semiboldWeight);
-                        border-top: 1px solid var(--toneEight);
-                        padding: 15px;
-                    }
-                    &[open] .summary .arrowDown {
-                        transform: rotate(180deg); /* Rota la flecha 180 grados cuando está abierto */
+                    &[open] .summary .option .arrowDown {
+                        transform: rotate(180deg);
+                        background-color: var(--toneNine);
                     }
                     .footerFooter{
                         width:100%;
@@ -292,7 +297,7 @@
                         justify-content: flex-end;
                         align-items: center;
                         gap:5px;
-                        padding:0px 0px;
+                        padding: 0px 20px 10px;
                         /* background-color: transparent; */
                         opacity:1;
                         visibility:visible;
@@ -320,3 +325,4 @@
         }
     }
 }
+
