@@ -84,6 +84,7 @@
                 color: var(--toneFive);
                 font-size: var(--regularSize);
                 font-weight: var(--semiboldWeight);
+                box-shadow: 0 4px 16px 2px #00000069;
                 transition: filter 0.3s ease-in-out;
                 .headCard{
                     /* position:relative; */
