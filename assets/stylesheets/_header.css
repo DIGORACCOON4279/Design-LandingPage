@@ -151,7 +151,7 @@
                                         text-align: left;
                                         white-space: nowrap;
                                         position:relative;
-                                        color:var(--toneFive);
+                                        color:var(--toneSix);
                                         font-size:var(--regularSize);
                                         font-weight:var(--semiboldWeight);
                                         transition: background-color 0.3s ease-in-out;
