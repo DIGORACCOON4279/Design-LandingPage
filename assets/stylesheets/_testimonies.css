@@ -74,23 +74,19 @@
             .testimonyBlock {
                 width: 300px;
                 height:auto;
-                /* display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center; */
-                overflow: hidden;
                 background-color:var(--toneTen) ;
                 border-radius: 20px;
                 color: var(--toneFive);
                 font-size: var(--regularSize);
                 font-weight: var(--semiboldWeight);
                 box-shadow: 0 4px 16px 2px #00000069;
-                transition: filter 0.3s ease-in-out;
+                overflow: hidden;
+                transform: scale(100%);
+                transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
                 .headCard{
-                    /* position:relative; */
                     .backgroundHeader{
                         width:100%;
-                        height:50px;
+                        height:48px;
                         background-position:cover;
                         background-size:100%;
                         background-repeat: no-repeat;
@@ -205,8 +201,8 @@
                     justify-content: center;
                     /* align-items: center; */
                     gap:30px;
-                    border-top:1px solid var(--toneEight);
-                    border-bottom:1px solid var(--toneEight);
+                    border-top:1px solid var(--toneNine);
+                    border-bottom:1px solid var(--toneNine);
                     padding:20px;
                     .contentCard{
                         color: var(--toneFour);
@@ -332,8 +328,9 @@
         &:has(.testimonyBlock:hover) .testimonyBlock:not(:hover) {
             filter: blur(6px);
         }
-        .testimonyBlock:hover .testimonyBlock {
+        .testimonyBlock:hover{
             filter: none;
+            transform: scale(102%);
         }
     }
 }
