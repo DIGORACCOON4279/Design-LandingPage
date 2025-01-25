@@ -73,25 +73,64 @@
                     flex-shrink: 0;
                     text-decoration: none;
                     border-radius: 10px;
+                    position:relative;
+                    overflow: hidden;
                     background-color:var(--white);
                     transform:scale(100%);
                     transition: transform 0.3s ease-in-out;
                     &:hover{
-                        color:var(--white);
                         transform:scale(102%);
-                        background-color:var(--toneFive);
+                    }
+
+                    &:after{
+                        content:"";
+                        width: 100%;
+                        height: 100%;
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        background-color:purple;
+                        opacity:0;
+                        transform:translate(-100%);
+                        transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out ;
                     }
                     &:hover:after{
-                        content:"❯";
+                        content:" Login ❯";
+                        color:var(--white);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color:var(--toneFive);
+                        transform:translate(0%);
+                        opacity:1;
                     }
                 }
                 .register{
                     color:var(--white);
                     background-color:var(--blueFour);
                     &:hover{
-                        color:var(--black);
                         transform:scale(102%);
-                        background-color:var(--white);
+                    }
+                    &:after{
+                        content:"";
+                        width: 100%;
+                        height: 100%;
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        opacity:0;
+                        transform:translate(-100%);
+                        transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out ;
+                    }
+                    &:hover:after{
+                        content:"Register ❯";
+                        color:var(--white);
+                        opacity:1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color:var(--blueThree);
+                        transform:translate(0%);
                     }
                 }
             }
@@ -148,6 +187,8 @@
         }
     }
 }
+
+
 
 
 
