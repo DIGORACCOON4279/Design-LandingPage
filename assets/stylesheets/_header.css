@@ -1,8 +1,6 @@
 
 /* Header */
 
-/* header */
-
 .header{
     /* display: none; */
     width:100%;
@@ -60,7 +58,6 @@
                 }
                 .optionsLink{
                     width:auto;
-                    /* position: relative; */
                     .item{
                         display:flex;
                         flex-direction: row;
@@ -87,7 +84,7 @@
                     }
                     .navbarMenuItem{
                         width: 100%;
-                        height: 85vh;
+                        height: 550px;
                         display:flex;
                         justify-content: center;
                         align-items: flex-start;
@@ -96,7 +93,6 @@
                         top: 100%;
                         left: 0;
                         right: 0;
-                        /* box-shadow: var(--boxShadowOne); */
                         border:2px solid var(--toneTwo);
                         background-color: var(--white);
                         opacity: 0;
@@ -106,17 +102,15 @@
                         transform-origin: left top;
                         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
                         .containerItem{
-                            width:80%;
+                            width:1100px;
                             height:100%;
-                            max-width:1100px;
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
                             align-items: flex-start;
-                            gap:100px;
+                            gap:150px;
                             margin:0px auto 50px;
                             padding:50px  ;
-                            /* background-color: gray; */
                             .imageItem{
                                 width: 100%;
                                 height:100%;
@@ -124,10 +118,8 @@
                                 justify-content: center;
                                 align-items: center;
                                 margin:auto;
-                                /* overflow: hidden; */
-                                /* background-color: rgb(0, 238, 247); */
                                 .linkImage{
-                                    width: 60%;
+                                    width: 70%;
                                 }
                             }
                             .subitem {
@@ -143,7 +135,6 @@
                                 border-radius: 10px;
                                 flex-grow:1;
                                 align-self: stretch;
-                                /* background-color: rgb(198, 0, 247); */
                                 li {
                                     list-style-type: none;
                                     .link {
@@ -158,6 +149,7 @@
                                         text-decoration: none;
                                         text-align: left;
                                         white-space: nowrap;
+                                        position:relative;
                                         color:var(--toneFive);
                                         font-size:var(--regularSize);
                                         font-weight:var(--semiboldWeight);
@@ -166,10 +158,33 @@
                                             color: var(--blueFour);
                                             background-color: var(--blueOne);
                                         }
+                                        &:after{
+                                            content:"";
+                                            width:100%;
+                                            height:auto;
+                                            position:absolute;
+                                            top:0%;
+                                            left:120%;
+                                            opacity:0;
+                                            transform:scale(0%);
+                                            transform-origin: top left;
+                                            box-shadow: 0 0 16px 2px var(--toneThree);
+                                            padding: 15px;
+                                            overflow:hidden;
+                                            border-radius: 10px;
+                                            transition:transform 0.3s ease-in-out, opacity ease-in-out, background-color 0.3s ease-in-out;
+                                        }
                                         &:hover:after{
-                                            content:"✔";
-                                            margin-left: 20px;
-                                            font-size: 0.8rem;
+                                            content:"";
+                                            background-color: var(--white);
+                                            opacity:1;
+                                            transform:scale(100%);
+                                            width: 100%;
+                                            white-space:normal ;
+                                            word-wrap: break-word;
+                                            color:var(--toneFive);
+                                            font-size: var(--lightSize);
+                                            font-weight: var(--mediumWeight);
                                         }
                                     }
                                 }
@@ -179,6 +194,186 @@
                     &:hover > .navbarMenuItem{
                         opacity:1;
                         transform:scale(100%);
+                    }
+                }
+                .optionsLink1{
+                    .navbarMenuItem{
+                        .containerItem{
+                            .subitem{
+                                li:nth-child(1){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Access your main dashboard, where you can view highlighted projects and track your recent activities, keeping everything you need in one place for easy navigation and quick updates.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(2){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Explore opportunities in freelance work, services, collaborations, and available job openings, allowing you to connect with potential clients and collaborators, or find your next career move in the design industry.";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .optionsLink2{
+                    .navbarMenuItem{
+                        .containerItem{
+                            .subitem{
+                                li:nth-child(1){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Real-time collaborative design tools.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(2){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Pre-designed templates and customizable resources.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(3){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Project and task organization and management.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(4){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Options to export and share designs in multiple formats.";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .optionsLink3{
+                    .navbarMenuItem{
+                        .containerItem{
+                            .subitem{
+                                li:nth-child(1){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Explore featured projects and portfolios from other users.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(2){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Access articles, tutorials, and educational resources related to design.";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .optionsLink4{
+                    .navbarMenuItem{
+                        .containerItem{
+                            .subitem{
+                                li:nth-child(1){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Users can showcase their branding projects, promotional materials, or creative layouts. The platform allows them to upload portfolios, receive feedback, and connect with potential collaborators or clients.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(2){
+                                    .link{
+                                        &:hover:after{
+                                            content:"A space for designers to present their digital product interfaces, demonstrating interactive prototypes or design systems. Roller Seed can also offer features for sharing design guidelines and receiving peer reviews.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(3){
+                                    .link{
+                                        &:hover:after{
+                                            content:"UX professionals can upload case studies detailing user research, wireframes, and testing processes. The platform can include options for sharing insights on improving user-centered design and fostering community discussions.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(4){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Photographers can create galleries of their work, categorized by genre (e.g., portraits, landscapes). Roller Seed might include features for licensing images, offering prints, or building connections with art buyers.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(5){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Illustrators can present their artwork in organized galleries or create collaborative projects with other creatives. The app could include tools for selling or licensing their designs.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(6){
+                                    .link{
+                                        &:hover:after{
+                                            content:"A hub for motion designers to share animated projects like title sequences, ads, or UI animations. Roller Seed can provide video-friendly display formats and peer feedback systems.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(7){
+                                    .link{
+                                        &:hover:after{
+                                            content:"A space for 3D artists to upload renders, animations, or AR/VR projects. The app could support interactive showcases, allowing viewers to explore 3D models in real-time.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(8){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Designers can share overarching visual strategies, including typography and color palettes, for branding or campaigns.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(9){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Share designs, 3D models, and blueprints to connect with clients and collaborators.";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .optionsLink5{
+                    .navbarMenuItem{
+                        .containerItem{
+                            .subitem{
+                                li:nth-child(1){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Tools for receiving feedback on projects.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(2){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Tutorials, help guides, and FAQs.";
+                                        }
+                                    }
+                                }
+                                li:nth-child(3){
+                                    .link{
+                                        &:hover:after{
+                                            content:"Access technical support and contact the platform's team.";
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 .userBlock{
