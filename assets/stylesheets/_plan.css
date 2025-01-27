@@ -1,0 +1,99 @@
+
+/* Container */
+
+/* Plan Section */
+
+.planSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    .planContainer{
+        max-width: 1300px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2fr 1fr);
+        gap: 30px;
+        justify-items: center;
+        align-items: flex-start;
+        .titlesBlock{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+        }
+        .planExplanationBlock{
+            width:100%;
+            height:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap:30px;
+            .planCard{
+                width:100%;
+                height:auto;
+                background-image:url("../../img/backgroundPlans.png");
+                background-repeat: no-repeat;
+                background-position:100%;
+                background-size: cover;
+                border-radius: 20px;
+                box-shadow: 0 4px 16px 2px var(--toneTwo);
+                overflow:hidden;
+                padding:20px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap:20px;
+                .planMonth,
+                .planAnnual{
+                    border-bottom: 1px solid var(--toneSix);
+                    padding-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap:20px;
+                }
+                .planAnnual{
+                    border-bottom:none;
+                    padding-bottom: 0px;
+                }
+            }
+        }
+        .planCardBlock{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position:relative;
+            .kindPlans{
+                width:100%;
+                height:auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap:30px;
+                position:sticky;
+                top:0;
+            }
+            .planBlock{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap:30px;
+                .planCard{
+                    width:100%;
+                    height:auto;
+
+                }
+            }
+        }
+    }
+}
+

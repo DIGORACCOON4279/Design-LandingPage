@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:auto;
+    margin: 150px auto;
     .wrappedContainer{
         max-width:1300px;
         height:auto;
