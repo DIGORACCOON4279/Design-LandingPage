@@ -65,6 +65,7 @@
             }
         }
         .planCardBlock{
+            height:auto;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -79,7 +80,16 @@
                 align-items: flex-start;
                 gap:30px;
                 position:sticky;
-                top:0;
+                top:50px;
+                background-color: var(--toneTen);
+                .titleCard{
+                    width:100%;
+                    padding:15px;
+                    color: var(--toneFour);
+                    font-size: var(--xLargeSize);
+                    font-weight: var(--semiboldWeight);
+                    text-align: center;
+                }
             }
             .planBlock{
                 display: flex;
@@ -90,10 +100,61 @@
                 .planCard{
                     width:100%;
                     height:auto;
-
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap:20px;
+                    padding:20px;
+                    .headerCard{
+                        color: var(--blueThree);
+                        font-size: var(--xLargeSize);
+                        font-weight: var(--semiboldWeight);
+                        .monthFee{
+                            color: var(--blueThree);
+                            font-size: var(--mediumSize);
+                            font-weight: var(--semiboldWeight);
+                        }
+                    }
+                    .bodyCard{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        gap:15px;
+                        border-top: 1px solid var(--toneFour);
+                        border-bottom: 1px solid var(--toneFour);
+                        padding-top:20px;
+                        padding-bottom:20px;
+                        .featuresItem{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap:20px;
+                            .featureIcon{
+                                width:auto;
+                                height:auto;
+                            }
+                            .features{
+                                color: var(--toneSix);
+                                font-size: var(--mediumSize);
+                                font-weight: var(--semiboldWeight);
+                            }
+                        }
+                    }
+                    .footerCard{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        gap:15px;
+                    }
                 }
             }
         }
     }
 }
+
 
