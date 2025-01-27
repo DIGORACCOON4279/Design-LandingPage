@@ -89,8 +89,8 @@
                         width:100%;
                         padding-top:20px;
                         padding-bottom:20px;
-                        border-top: 1px solid var(--toneSix);
-                        border-bottom: 1px solid var(--toneSix);
+                        border-top: 0.5px solid var(--toneFive);
+                        border-bottom: 0.5px solid var(--toneFive);
                         .features{
                             color: var(--toneSix);
                             font-size: var(--regularSize);
