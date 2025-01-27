@@ -59,12 +59,53 @@
                     box-shadow: 0 4px 16px 2px var(--toneTwo);
                     overflow:hidden;
                     padding:20px;
-                    .bodyFeaturesMannual,
-                    bodyFeaturesMannual{
-                    padding-top:20px;
-                    padding-bottom:20px;
-                    border-top: 1px solid var(--toneSix);
-                    border-bottom: 1px solid var(--toneSix);
+                    .headerTitle{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap:5px;
+                        .features{
+                            width:fit-content;
+                            color: var(--toneThree);
+                            font-size: var(--lightSize);
+                            font-weight: var(--semiboldWeight);
+                            padding:5px 20px;
+                            background-color:var(--blueThree);
+                            text-align: center;
+                            border-radius:5px;
+                        }
+                        .titleCardExplanation{
+                            color: var(--toneSeven);
+                            font-size: var(--xLargeSize);
+                            font-weight: var(--semiboldWeight);
+                            .time{
+                                color: var(--toneSeven);
+                                font-size: var(--regularSize);
+                                font-weight: var(--semiboldWeight);
+                            }
+                        }
+                    }
+                    .bodyFeaturesMannual{
+                        width:100%;
+                        padding-top:20px;
+                        padding-bottom:20px;
+                        border-top: 1px solid var(--toneSix);
+                        border-bottom: 1px solid var(--toneSix);
+                        .features{
+                            color: var(--toneSix);
+                            font-size: var(--regularSize);
+                            font-weight: var(--semiboldWeight);
+                            .check{
+                                color: var(--blueThree);
+                            }
+                        }
+                    }
+                    .footerCard{
+                        .features{
+                            color: var(--toneSeven);
+                            font-size: var(--lightSize);
+                            font-weight: var(--semiboldWeight);
+                        }
                     }
                 }
             }
@@ -90,11 +131,6 @@
                 background-color: var(--toneTen);
                 .headPlan{
                     width:100%;
-                    /* display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap:0px; */
                     overflow: hidden;
                     position: relative;
                     .titleCard{
