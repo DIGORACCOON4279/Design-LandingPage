@@ -107,13 +107,18 @@
                     gap:20px;
                     padding:20px;
                     .headerCard{
-                        color: var(--blueThree);
-                        font-size: var(--xLargeSize);
-                        font-weight: var(--semiboldWeight);
-                        .monthFee{
+                        width:100%;
+                        height:auto;
+                        .price{
                             color: var(--blueThree);
-                            font-size: var(--mediumSize);
+                            font-size: var(--xxLargeSize);
                             font-weight: var(--semiboldWeight);
+                            text-align: center;
+                            .monthFee{
+                                color: var(--blueThree);
+                                font-size: var(--mediumSize);
+                                font-weight: var(--semiboldWeight);
+                            }
                         }
                     }
                     .bodyCard{
