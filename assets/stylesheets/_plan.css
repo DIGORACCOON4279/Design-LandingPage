@@ -77,18 +77,38 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: flex-start;
-                gap:30px;
+                align-items: center;
+                gap:0px;
                 position:sticky;
                 top:50px;
+                z-index: 1;
                 background-color: var(--toneTen);
-                .titleCard{
+                .headPlan{
                     width:100%;
-                    padding:15px;
-                    color: var(--toneFour);
-                    font-size: var(--xLargeSize);
-                    font-weight: var(--semiboldWeight);
-                    text-align: center;
+                    /* display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap:0px; */
+                    overflow: hidden;
+                    position: relative;
+                    .titleCard{
+                        width:100%;
+                        height:auto;
+                        padding:15px;
+                        color: var(--toneFour);
+                        font-size: var(--xLargeSize);
+                        font-weight: var(--semiboldWeight);
+                        text-align: center;
+                    }
+                    .planImage{
+                        width:40px;
+                        height:auto;
+                        position: absolute;
+                        top:0;
+                        right:0;
+
+                    }
                 }
             }
             .planBlock{
@@ -111,7 +131,7 @@
                         height:auto;
                         .price{
                             color: var(--blueThree);
-                            font-size: var(--xxLargeSize);
+                            font-size: var(--xxxLargeSize);
                             font-weight: var(--semiboldWeight);
                             text-align: center;
                             .monthFee{
@@ -156,11 +176,13 @@
                         align-items: flex-start;
                         gap:15px;
                         .planCta{
+                            width:100%;
                             color: var(--blueThree);
-                            font-size: var(--xMediumSize);
+                            font-size: var(--largeSize);
                             font-weight: var(--semiboldWeight);
                             text-decoration:none;
                             gap:0px;
+                            text-align:center;
                             transition: color 0.3s ease-in-out;
                             &:hover{
                                 color: var(--blueFour);
