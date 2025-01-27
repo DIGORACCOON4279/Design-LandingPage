@@ -144,7 +144,7 @@
                             }
                             .features{
                                 color: var(--toneSix);
-                                font-size: var(--mediumSize);
+                                font-size: var(--regularSize);
                                 font-weight: var(--semiboldWeight);
                             }
                         }
@@ -155,6 +155,31 @@
                         justify-content: space-between;
                         align-items: flex-start;
                         gap:15px;
+                        .planCta{
+                            color: var(--blueThree);
+                            font-size: var(--xMediumSize);
+                            font-weight: var(--semiboldWeight);
+                            text-decoration:none;
+                            gap:0px;
+                            transition: color 0.3s ease-in-out;
+                            &:hover{
+                                color: var(--blueFour);
+                            }
+                            .arrowTopRight{
+                                width:auto;
+                                height:auto;
+                                transform:translate(0px, 5px) scale(85%);
+                                transition:transform 0.3s ease-in-out;
+                            }
+                            &:hover .arrowTopRight{
+                                transform:translate(5px, 2px) scale(100%);
+                            }
+                        }
+                        .messagePlan{
+                            color: var(--toneFive);
+                            font-size: var(--lightSize);
+                            font-weight: var(--semiboldWeight);
+                        }
                     }
                 }
             }
