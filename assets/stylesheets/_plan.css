@@ -34,77 +34,109 @@
             justify-content: center;
             align-items: flex-start;
             gap:30px;
-            .planCardMonth,
-            .planCardAnnual{
+            .choicePlan{
                 width:100%;
-                height:auto;
                 display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                gap:20px;
-                .planMonth,
-                .planAnnual{
-                    width:100%;
-                    height:100%;
-                    padding-bottom: 20px;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                border-bottom: 1px solid var(--toneFive);
+                ul{
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap:0;
+                    li{
+                        list-style: none;
+                        .itemPlan{
+                            padding:15px 35px;
+                            color: var(--toneThree);
+                            font-size: var(--largeSize);
+                            font-weight: var(--semiboldWeight);
+                            background-color: var(--toneNine);
+                        }
+                    }
+                }
+            }
+            .planSlider{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap:30px;
+                .planCardMonth,
+                .planCardAnnual{
+                    width:100%;
+                    height:auto;
+                    display: flex;
+                    flex-direction: row;
                     align-items: flex-start;
                     gap:20px;
-                    background-image:url("../../img/backgroundPlans.png");
-                    background-repeat: no-repeat;
-                    background-position:100%;
-                    background-size: cover;
-                    border-radius: 20px;
-                    box-shadow: 0 4px 16px 2px var(--toneTwo);
-                    overflow:hidden;
-                    padding:20px;
-                    .headerTitle{
+                    .planMonth,
+                    .planAnnual{
+                        width:100%;
+                        height:100%;
+                        padding-bottom: 20px;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
-                        gap:5px;
-                        .features{
-                            width:fit-content;
-                            color: var(--toneThree);
-                            font-size: var(--lightSize);
-                            font-weight: var(--semiboldWeight);
-                            padding:5px 20px;
-                            background-color:var(--blueThree);
-                            text-align: center;
-                            border-radius:5px;
-                        }
-                        .titleCardExplanation{
-                            color: var(--toneSeven);
-                            font-size: var(--xLargeSize);
-                            font-weight: var(--semiboldWeight);
-                            .time{
+                        gap:20px;
+                        background-image:url("../../img/backgroundPlans.png");
+                        background-repeat: no-repeat;
+                        background-position:100%;
+                        background-size: cover;
+                        border-radius: 20px;
+                        box-shadow: 0 4px 16px 2px var(--toneTwo);
+                        overflow:hidden;
+                        padding:20px;
+                        .headerTitle{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap:5px;
+                            .features{
+                                width:fit-content;
+                                color: var(--toneThree);
+                                font-size: var(--lightSize);
+                                font-weight: var(--semiboldWeight);
+                                padding:5px 20px;
+                                background-color:var(--blueThree);
+                                text-align: center;
+                                border-radius:5px;
+                            }
+                            .titleCardExplanation{
                                 color: var(--toneSeven);
+                                font-size: var(--xLargeSize);
+                                font-weight: var(--semiboldWeight);
+                                .time{
+                                    color: var(--toneSeven);
+                                    font-size: var(--regularSize);
+                                    font-weight: var(--semiboldWeight);
+                                }
+                            }
+                        }
+                        .bodyFeaturesMannual{
+                            width:100%;
+                            padding-top:20px;
+                            padding-bottom:20px;
+                            border-top: 0.5px solid var(--toneFive);
+                            border-bottom: 0.5px solid var(--toneFive);
+                            .features{
+                                color: var(--toneSix);
                                 font-size: var(--regularSize);
                                 font-weight: var(--semiboldWeight);
+                                .check{
+                                    color: var(--blueThree);
+                                }
                             }
                         }
-                    }
-                    .bodyFeaturesMannual{
-                        width:100%;
-                        padding-top:20px;
-                        padding-bottom:20px;
-                        border-top: 0.5px solid var(--toneFive);
-                        border-bottom: 0.5px solid var(--toneFive);
-                        .features{
-                            color: var(--toneSix);
-                            font-size: var(--regularSize);
-                            font-weight: var(--semiboldWeight);
-                            .check{
-                                color: var(--blueThree);
+                        .footerCard{
+                            .features{
+                                color: var(--toneSeven);
+                                font-size: var(--lightSize);
+                                font-weight: var(--semiboldWeight);
                             }
-                        }
-                    }
-                    .footerCard{
-                        .features{
-                            color: var(--toneSeven);
-                            font-size: var(--lightSize);
-                            font-weight: var(--semiboldWeight);
                         }
                     }
                 }
