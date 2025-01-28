@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  let currentIndex = 0;
+let currentIndex = 0;
 
   // Selección de los elementos según las clases del proyecto bannerContainer
   const prevArrow = document.querySelector('#prevArrow'); // Flecha izquierda
@@ -9,36 +9,37 @@ document.addEventListener('DOMContentLoaded', function() {
   const totalSlides = banners.length; // Total de imágenes
 
   // Eventos para las flechas
-  prevArrow.addEventListener('click', () => {
-      moveSlide(-1); // Mueve al slide anterior
-  });
+prevArrow.addEventListener('click', () => {
+    moveSlide(-1); // Mueve al slide anterior
+});
 
-  nextArrow.addEventListener('click', () => {
-      moveSlide(1); // Mueve al slide siguiente
-  });
+nextArrow.addEventListener('click', () => {
+    moveSlide(1); // Mueve al slide siguiente
+});
 
   // Función que maneja el movimiento del carrusel
-  function moveSlide(direction) {
-      currentIndex += direction;
+function moveSlide(direction) {
+    currentIndex += direction;
 
-      // Si el índice es menor que 0, va a la última imagen
-      if (currentIndex < 0) {
-          currentIndex = (totalSlides - 1);
-      }
-      // Si el índice es mayor o igual al total de imágenes, va al inicio
-      else if(currentIndex >= totalSlides) {
-          currentIndex = 0;
-      }
+    // Si el índice es menor que 0, va a la última imagen
+    if (currentIndex < 0) {
+        currentIndex = (totalSlides - 1);
+    }
+    // Si el índice es mayor o igual al total de imágenes, va al inicio
+    else if(currentIndex >= totalSlides) {
+        currentIndex = 0;
+    }
 
-      // Aplica la transformación para mover el slider
-      slider.style.transition = 'transform 0.5s ease-in-out'; // Agrega una transición suave
-      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
+    // Aplica la transformación para mover el slider
+    slider.style.transition = 'transform 0.5s ease-in-out'; // Agrega una transición suave
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-  // Opcional: Mover automáticamente las diapositivas cada 5 segundos
-  setInterval(() => {
-      moveSlide(1);
-  }, 8000);
+}
+
+    // Opcional: Mover automáticamente las diapositivas cada 5 segundos
+        setInterval(() => {
+        moveSlide(1);
+    },    8000);
 });
 
 
