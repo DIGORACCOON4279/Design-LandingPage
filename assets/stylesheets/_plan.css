@@ -20,11 +20,25 @@
         justify-items: center;
         align-items: flex-start;
         .titlesBlock{
+            width:100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
             gap:30px;
+            .titleSection{
+                width:60%;
+                color: var(--blueFour);
+                font-size: var(--xxLargeSize);
+                font-weight: var(--boldWeight);
+            }
+            .planInfo{
+                width:60%;
+                color: var(--toneFive);
+                font-size: var(--largeSize);
+                font-weight: var(--semiboldWeight);
+            }
         }
         .planExplanationBlock{
             width:100%;
@@ -52,13 +66,13 @@
                         .itemPlan{
                             padding:15px 35px;
                             color: var(--toneThree);
-                            font-size: var(--largeSize);
+                            font-size: var(--xMediumSize);
                             font-weight: var(--semiboldWeight);
                             background-color: var(--toneNine);
                             transition:background-color 0.3s ease-in-out, color 0.3s ease-in-out;
                             &:hover{
-                                color: var(--toneNine);
-                                background-color: var(--toneThree);
+                                color: var(--toneSix);
+                                background-color: var(--toneOne);
                             }
                             &.active {
                                 background-color: var(--blueFour);
@@ -137,7 +151,7 @@
                                 .time{
                                     color: var(--blueFour);
                                     font-size: var(--lightSize);
-                                    font-weight: var(--semiboldWeight);
+                                    font-weight: var(--boldWeight);
                                 }
                             }
                         }
