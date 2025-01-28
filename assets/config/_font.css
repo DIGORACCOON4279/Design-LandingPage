@@ -14,10 +14,14 @@
     --mediumSize:1rem;
     --xMediumSize:1.1rem;
     --largeSize:1.3rem;
-    --titleSize:1.5rem;
     --xLargeSize:1.8rem;
     --xxLargeSize:2.7rem;
     --xxxLargeSize:3.5rem;
+
+    /* Title Size */
+
+    --titleSize:1.5rem;
+    --mediumTitleSize:2.2rem;
 
     /* font Weight */
 

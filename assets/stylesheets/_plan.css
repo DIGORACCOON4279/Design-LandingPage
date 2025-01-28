@@ -61,7 +61,7 @@
                                 background-color: var(--toneThree);
                             }
                             &.active {
-                                background-color: var(--toneFour);
+                                background-color: var(--blueFour);
                                 color: #fff;
                             }
                         }
@@ -112,7 +112,7 @@
                         background-position:100%;
                         background-size: cover;
                         border-radius: 20px;
-                        box-shadow: 0 4px 16px 2px var(--toneTwo);
+                        /* box-shadow: 0 4px 16px 2px var(--toneTwo); */
                         overflow:hidden;
                         padding:20px;
                         .headerTitle{
@@ -131,12 +131,12 @@
                                 border-radius:5px;
                             }
                             .titleCardExplanation{
-                                color: var(--toneSeven);
-                                font-size: var(--xLargeSize);
+                                color: var(--blueFour);
+                                font-size: var(--mediumTitleSize);
                                 font-weight: var(--semiboldWeight);
                                 .time{
-                                    color: var(--toneSeven);
-                                    font-size: var(--regularSize);
+                                    color: var(--blueFour);
+                                    font-size: var(--lightSize);
                                     font-weight: var(--semiboldWeight);
                                 }
                             }
