@@ -65,14 +65,14 @@
                         list-style: none;
                         .itemPlan{
                             padding:15px 35px;
-                            color: var(--toneThree);
+                            color: var(--toneSix);
                             font-size: var(--xMediumSize);
                             font-weight: var(--semiboldWeight);
-                            background-color: var(--toneNine);
+                            background-color: var(--toneOne);
                             transition:background-color 0.3s ease-in-out, color 0.3s ease-in-out;
                             &:hover{
-                                color: var(--toneSix);
-                                background-color: var(--toneOne);
+                                color: var(--toneThree);
+                                background-color: var(--toneNine);
                             }
                             &.active {
                                 background-color: var(--blueFour);
