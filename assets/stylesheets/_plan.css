@@ -60,6 +60,10 @@
                                 color: var(--toneNine);
                                 background-color: var(--toneThree);
                             }
+                            &.active {
+                                background-color: var(--toneFour);
+                                color: #fff;
+                            }
                         }
                     }
                 }
@@ -80,6 +84,20 @@
                     flex-direction: row;
                     align-items: flex-start;
                     gap:20px;
+                    transform: scale(0.95);
+                    opacity: 0;
+                    display: none;
+                    transition: transform 0.3s ease, opacity 0.3s ease;
+                    &.fade-in {
+                        transform: scale(1);
+                        opacity: 1;
+                        display: flex;
+                    }
+                    &.fade-out {
+                        transform: scale(0.65);
+                        opacity: 0;
+                        display: none;
+                    }
                     .planMonth,
                     .planAnnual{
                         width:100%;
@@ -289,3 +307,32 @@
 }
 
 
+/* Transición general */
+
+/* .planCardMonth, .planCardAnnual {
+    transform: scale(0.95);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+} */
+
+/* .fade-in {
+    transform: scale(1);
+}
+
+.fade-out {
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+/* O Tambien
+
+.planCardMonth, .planCardAnnual {
+    transform: scale(0.95);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    &.fade-in {
+        transform: scale(1);
+    }
+    &.fade-out {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+} */
