@@ -26,7 +26,16 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            gap:30px;
+            gap:15px;
+            .slogan{
+                color:var(--blueThree);
+                background-color:var(--backgroundTwo);
+                font-size:var(--largeSize);
+                font-weight:var(--boldWeight);
+                padding: 5px;
+                border-radius: 5px;
+                text-align: left;
+            }
             .titleSection{
                 width:65%;
                 color: var(--blueFour);

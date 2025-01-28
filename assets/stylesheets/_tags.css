@@ -37,8 +37,8 @@
             .tagSlogan{
                 color:var(--blueThree);
                 background-color:var(--backgroundOne);
-                font-size:var(--xLargeSize);
-                font-weight:var(--semiboldWeight);
+                font-size:var(--largeSize);
+                font-weight:var(--boldWeight);
                 padding: 5px;
                 border-radius: 5px;
                 transform:rotate(-4deg) translateY(15px);
