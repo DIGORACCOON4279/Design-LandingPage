@@ -16,7 +16,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2fr 1fr);
-        gap: 30px;
+        gap: 100px;
         justify-items: center;
         align-items: flex-start;
         .titlesBlock{
@@ -150,7 +150,7 @@
                             .features{
                                 color: var(--toneSeven);
                                 font-size: var(--regularSize);
-                                font-weight: var(--semiboldWeight);
+                                font-weight: var(--boldWeight);
                                 .check{
                                     color: var(--blueThree);
                                 }
@@ -160,7 +160,7 @@
                             .features{
                                 color: var(--toneSeven);
                                 font-size: var(--lightSize);
-                                font-weight: var(--semiboldWeight);
+                                font-weight: var(--mediumWeight);
                             }
                         }
                     }
