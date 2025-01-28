@@ -28,13 +28,13 @@
             text-align: center;
             gap:30px;
             .titleSection{
-                width:60%;
+                width:65%;
                 color: var(--blueFour);
                 font-size: var(--xxLargeSize);
                 font-weight: var(--boldWeight);
             }
             .planInfo{
-                width:60%;
+                width:65%;
                 color: var(--toneFive);
                 font-size: var(--largeSize);
                 font-weight: var(--semiboldWeight);

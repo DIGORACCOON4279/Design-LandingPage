@@ -44,16 +44,16 @@
                 transform:rotate(-4deg) translateY(15px);
             }
             .title{
-                width: 65%;
-                color:var(--white);
-                font-size:var(--xxLargeSize);
-                font-weight:var(--mediumWeight);
+                width:65%;
+                color: var(--toneThree);
+                font-size: var(--xxLargeSize);
+                font-weight: var(--boldWeight);
             }
             .subtitle{
-                width: 65%;
-                color:var(--toneThree);
-                font-size:var(--largeSize);
-                font-weight:var(--mediumWeight);
+                width:65%;
+                color: var(--toneFive);
+                font-size: var(--largeSize);
+                font-weight: var(--semiboldWeight);
             }
             .ctas{
                 width: 65%;
