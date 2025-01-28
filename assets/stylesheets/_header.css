@@ -129,7 +129,7 @@
                                 flex-direction: column;
                                 justify-content: flex-start;
                                 align-items: flex-start;
-                                gap:5px;
+                                gap:0px;
                                 border: 1px solid var(--toneTwo);
                                 padding:20px;
                                 border-radius: 10px;
@@ -137,14 +137,19 @@
                                 align-self: stretch;
                                 li {
                                     display:flex;
-                                        flex-direction: row;
-                                        justify-content: space-between;
-                                        align-items: center;
-                                        gap:20px;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    gap:20px;
                                     list-style-type: none;
                                     .link {
                                         width:200px;
                                         height:auto;
+                                        display:flex;
+                                        flex-direction: row-reverse;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        gap:0px;
                                         padding: 10px 25px;
                                         border-radius:10px;
                                         text-decoration: none;
@@ -186,6 +191,10 @@
                                             color:var(--toneFive);
                                             font-size: var(--lightSize);
                                             font-weight: var(--mediumWeight);
+                                        }
+                                        .linkIcon{
+                                            width:20px;
+                                            height:20px;
                                         }
                                     }
                                 }
