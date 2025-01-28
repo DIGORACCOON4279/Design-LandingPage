@@ -17,8 +17,8 @@
     align-items: center;
     overflow: hidden;
     .heroSectionContainer{
-        width:85%;
-        max-width: 1150px;
+        /* width:85%; */
+        max-width: 1300px;
         height:100vh;
         display: flex;
         flex-direction: row;
@@ -45,12 +45,12 @@
             .title{
                 color:var(--white);
                 font-size:var(--xxLargeSize);
-                font-weight:var(--mediumWeight);
+                font-weight:var(--boldWeight);
             }
             .subtitle{
                 color:var(--toneThree);
                 font-size:var(--largeSize);
-                font-weight:var(--mediumWeight);
+                font-weight:var(--semiboldWeight);
             }
             .ctas{
                 display:flex;
@@ -81,7 +81,6 @@
                     &:hover{
                         transform:scale(102%);
                     }
-
                     &:after{
                         content:"";
                         width: 100%;
@@ -161,7 +160,7 @@
                     flex: 0 0 auto;
                     flex-grow: 100%;
                     .imageHeroSection {
-                        width: auto;
+                        width:auto;
                         height: auto;
                         object-fit: cover;
                     }
