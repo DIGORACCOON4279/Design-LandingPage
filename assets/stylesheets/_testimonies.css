@@ -78,6 +78,7 @@
                 padding: 5px;
                 border-radius: 5px;
                 text-align: left;
+                transform:rotate(-4deg) translateY(15px);
             }
             .titleSection{
                 width:65%;
