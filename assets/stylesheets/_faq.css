@@ -19,64 +19,110 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap:20px;
-        .accordion{
+        gap:100px;
+        .titleFaq{
             width:100%;
-            background-color: var(--toneNine);
-            /* padding:15px; */
-            border-radius: 10px;
-            .details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .slogan{
+                color:var(--blueThree);
+                background-color:var(--backgroundTwo);
+                font-size:var(--largeSize);
+                font-weight:var(--boldWeight);
+                padding: 5px;
+                border-radius: 5px;
+                text-align: left;
+                transform:rotate(-4deg) translateY(15px);
+            }
+            .title{
+                width:85%;
+                color: var(--blueFour);
+                font-size: var(--xxLargeSize);
+                font-weight: var(--boldWeight);
+                text-align: center;
+            }
+        }
+        .faqBlock{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:5px;
+            .accordionFaq{
                 width:100%;
-                background-color: transparent;
-                border: none;
-                margin: 0;
-                padding: 0px;
-                .summary{
+                .detailsFaq{
                     width:100%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
                     background-color: transparent;
                     border: none;
-                    padding: 20px 15px 10px;
-                    cursor: pointer;
-                    list-style: none;
-                    &::-webkit-details-marker {
-                        display: none;
-                    }
-                    .option{
+                    margin: 0;
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap:5px;
+                    .summaryFaq{
                         width:100%;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
                         align-items: center;
-                        .subtitle{
-                            width:100%;
-                            color: var(--toneThree);
-                            font-size: var(--mediumSize);
-                            font-weight: var(--semiboldWeight);
-                            padding-bottom: 10px;
-                            text-align:left;
+                        background-color: var(--toneNine);
+                        border: none;
+                        padding: 20px 40px;
+                        cursor: pointer;
+                        list-style: none;
+                        border-radius: 10px;
+                        border:1px solid var(--toneNine);
+                        transition:0.3s ease-in-out;
+                        &::-webkit-details-marker {
+                            display: none;
                         }
-                        .ArrowDown{
-                            width: 32px;
-                            height: 32px;
-                            transition: transform 0.3s ease;
+                        .optionFaq{
+                            width:100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            .subtitle{
+                                width:100%;
+                                color: var(--toneTwo);
+                                font-size: var(--xMediumSize);
+                                font-weight: var(--semiboldWeight);
+                                /* padding-bottom: 10px; */
+                                text-align:left;
+                            }
+                            .ArrowDown{
+                                width: 32px;
+                                height: 32px;
+                                transition: transform 0.3s ease;
+                            }
+                        }
+                        &:hover{
+                            background-color:var(--toneEight);
+                            border:1px solid var(--toneEight);
                         }
                     }
-                }
-                .info{
-                    width:100%;
-                    color: var(--toneFive);
-                    font-size: var(--regularSize);
-                    font-weight: var(--semiboldWeight);
-                    border-top: 1px solid var(--toneEight);
-                    padding: 15px;
-                    text-align:left;
-                }
-                &[open] .summary .ArrowDown {
-                    transform: rotate(180deg); /* Rota la flecha 180 grados cuando está abierto */
+                    .infoFaq{
+                        width:100%;
+                        color: var(--toneFive);
+                        font-size: var(--mediumSize);
+                        font-weight: var(--semiboldWeight);
+                        border: 1px solid var(--toneThree);
+                        padding: 30px 40px;
+                        text-align:left;
+                        border-radius: 10px;
+                        border:1px solid var(--toneFour);
+                        .icon{
+                            font-size: var(--lightSize);
+                        }
+                    }
+                    &[open] .summary .ArrowDown {
+                        transform: rotate(180deg); /* Rota la flecha 180 grados cuando está abierto */
+                    }
                 }
             }
         }
