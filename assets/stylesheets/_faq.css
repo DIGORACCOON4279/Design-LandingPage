@@ -12,50 +12,52 @@
     align-items: center;
     margin: 150px auto;
     .faqContainer{
-        max-width:1300px;
+        width:100%;
+        max-width:900px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap:100px;
+        gap:20px;
         .accordion{
             width:100%;
             background-color: var(--toneNine);
             /* padding:15px; */
             border-radius: 10px;
             .details{
+                width:100%;
                 background-color: transparent;
                 border: none;
                 margin: 0;
                 padding: 0px;
                 .summary{
                     width:100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: transparent;
+                    border: none;
+                    padding: 20px 15px 10px;
+                    cursor: pointer;
+                    list-style: none;
+                    &::-webkit-details-marker {
+                        display: none;
+                    }
+                    .option{
+                        width:100%;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
                         align-items: center;
-                        background-color: transparent;
-                        border: none;
-                        padding: 20px 15px 10px;
-                        cursor: pointer;
-                        list-style: none;
-                        &::-webkit-details-marker {
-                            display: none;
-                        }
-                        .option{
-                            width:100%;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            align-items: center;
                         .subtitle{
                             width:100%;
-                                color: var(--toneThree);
-                                font-size: var(--mediumSize);
-                                font-weight: var(--semiboldWeight);
-                                padding-bottom: 10px;
-
+                            color: var(--toneThree);
+                            font-size: var(--mediumSize);
+                            font-weight: var(--semiboldWeight);
+                            padding-bottom: 10px;
+                            text-align:left;
                         }
                         .ArrowDown{
                             width: 32px;
@@ -71,6 +73,7 @@
                     font-weight: var(--semiboldWeight);
                     border-top: 1px solid var(--toneEight);
                     padding: 15px;
+                    text-align:left;
                 }
                 &[open] .summary .ArrowDown {
                     transform: rotate(180deg); /* Rota la flecha 180 grados cuando está abierto */

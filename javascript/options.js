@@ -141,3 +141,5 @@ detailsElements.forEach((details, index) => {
 //         }
 //     });
 // });
+
+
