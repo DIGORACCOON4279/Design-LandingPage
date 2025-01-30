@@ -68,12 +68,12 @@
                 background-color: var(--toneNine);
                 /* padding:15px; */
                 border-radius: 10px;
-                details{
+                .details{
                     background-color: transparent;
                     border: none;
                     margin: 0;
                     padding: 0px;
-                    summary{
+                    .summary{
                         width:100%;
                         display: flex;
                         flex-direction: row;
