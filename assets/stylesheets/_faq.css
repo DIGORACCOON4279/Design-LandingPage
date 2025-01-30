@@ -13,7 +13,7 @@
     margin: 150px auto;
     .faqContainer{
         width:100%;
-        max-width:800px;
+        max-width:900px;
         display: flex;
         flex-direction: column;
         justify-content: center;
