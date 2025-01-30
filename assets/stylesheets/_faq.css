@@ -13,7 +13,7 @@
     margin: 150px auto;
     .faqContainer{
         width:100%;
-        max-width:900px;
+        max-width:800px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -120,7 +120,7 @@
                             font-size: var(--lightSize);
                         }
                     }
-                    &[open] .summary .ArrowDown {
+                    &[open] .summaryFaq .ArrowDown {
                         transform: rotate(180deg); /* Rota la flecha 180 grados cuando está abierto */
                     }
                 }
