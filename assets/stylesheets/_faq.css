@@ -72,7 +72,7 @@
                         align-items: center;
                         background-color: var(--toneNine);
                         border: none;
-                        padding: 20px 40px;
+                        padding: 25px 40px;
                         cursor: pointer;
                         list-style: none;
                         border-radius: 10px;
@@ -112,7 +112,7 @@
                         font-size: var(--mediumSize);
                         font-weight: var(--semiboldWeight);
                         border: 1px solid var(--toneThree);
-                        padding: 30px 40px;
+                        padding: 35px 40px;
                         text-align:left;
                         border-radius: 10px;
                         border:1px solid var(--toneFour);
