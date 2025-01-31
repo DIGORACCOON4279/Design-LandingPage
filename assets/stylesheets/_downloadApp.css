@@ -52,12 +52,12 @@
                 }
             }
             .downloadBoth{
-                width:100%;
+                width:auto;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-start;
-                gap:50px;
+                justify-content: flex-start;
+                align-items: center;
+                gap:20px;
                 .benefits{
                     width:100%;
                     display: flex;
@@ -65,7 +65,6 @@
                     justify-content: flex-start;
                     align-items: flex-start;
                     gap:10px;
-                    border-right: 1px solid var(--toneFour);
                     .oneBenefits{
                         display: flex;
                         flex-direction: row;
@@ -84,12 +83,15 @@
                     }
                 }
                 .images{
-                    width:100%;
+                    width:auto;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
-                    align-items:flex-start ;
+                    justify-content: center;
+                    align-items:center ;
+                    border: 1px solid var(--toneFour);
                     gap:10px;
+                    padding: 10px 15px;
+                    border-radius: 10px;
                     .paragraph{
                         color: var(--toneFive);
                         font-size: var(--lightSize);
