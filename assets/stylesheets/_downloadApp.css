@@ -121,7 +121,9 @@
     }
 }
 
-section.downloadImage{
+
+
+.downloadImage{
     width:100%;
     height:100%;
     /* background-image:url("../../img/downloadApp.png"); */
@@ -132,7 +134,7 @@ section.downloadImage{
     perspective:650px;
     /* background: radial-gradient(circle, #bbb, #777); */
 }
-.snail{
+.downloadImage .snail{
     width:100px;
     height:auto;
     position:absolute;
@@ -149,13 +151,17 @@ section.downloadImage{
         transform:rotate(360deg);
     }
 }
-.cellphone{
+.downloadImage .cellphone{
     width:300px;
     height:600px;
     border-radius:40px;
-    overflow: hidden;
-    border:10px solid var(--toneNine);
+    /* overflow:hidden; */
+    border-top:12px solid var(--toneNine);
+    border-bottom:12px solid var(--toneNine);
+    border-left:12px solid var(--toneNine);
+    border-right:10px solid var(--toneNine);
 
+    position: relative;
     /* transform: rotateX(15deg) rotateY(-10deg);
     transform-origin: center;
     transform-style: preserve-3d;
@@ -163,26 +169,58 @@ section.downloadImage{
     transition: transform 0.5s ease, box-shadow 0.5s ease; */
 
     transform-style: preserve-3d;
-    transform: translate(50%, -5%) rotateX(20deg) rotateY(-10deg);
+    /* transform: translate(50%, -5%) rotateX(20deg) rotateY(-10deg); */
     transition: transform 0.3s ease;
     box-shadow: 0px 4px 32px 6px #75757536;
 
 }
-.cellphone::before {
+.downloadImage .cellphone::before {
     content: "";
     position: absolute;
+    top:0;
+    left:0px;
+    right:0;
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, #222, #111);
     border-radius: 40px;
-    transform: translateZ(-5px); /* Da efecto de grosor */
+    transform: translateZ(-5px);
 }
+
+/* Buttons */
+
+.downloadImage .cellphone .buttonSide{
+    position: absolute;
+    top:12%;
+    right:-12px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.downloadImage .cellphone .buttonSide .buttonBig{
+    width:3px;
+    height:100px;
+    background-color: var(--toneNine);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: 0.5px solid var(--toneSix);
+}
+.downloadImage .cellphone .buttonSide .buttonSmall{
+    width:3px;
+    height:50px;
+    background-color: var(--toneNine);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: 0.5px solid var(--toneSix);
+}
+
+
 /* .cellphone:hover {
     transform: rotateX(0deg) rotateY(0deg);
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.7);
 } */
 
-.screen {
+.downloadImage .cellphone .screen {
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -194,7 +232,7 @@ section.downloadImage{
     transform: translateZ(5px); /* Eleva la pantalla */
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1);
 }
-.overlay{
+.downloadImage .cellphone .screen .overlay{
     width:100%;
     height: 600px;
     overflow-y: scroll;
@@ -203,6 +241,9 @@ section.downloadImage{
     border:1px solid var(--toneFive); */
     background-color: var(--white);
 }
+
+/* Borrar luego */
+
 .topCellphone{
     width:100%;
     height:auto;
@@ -215,12 +256,23 @@ section.downloadImage{
     margin-top:0px;
 }
 
+
+/* Esto luego */
+
 /* .downloadImage:hover .cellphone {
     transform: rotateX(10deg) rotateY(0deg);
 } */
-.downloadImage:hover .cellphone{
+
+
+/* Con esta estoy trabajando */
+
+/* .downloadImage:hover .cellphone{
     transform:translate(80%, 0%) rotateX(0deg) ;
-}
+} */
+
+
+
+
 
 /* .cardsDownload{
     width:100%;
@@ -244,27 +296,95 @@ section.downloadImage{
         left:15%;
     }
 } */
-.cardDownload1{
+
+
+.downloadImage .cardDownload1{
     position:absolute;
     top:25%;
     left:0%;
     z-index:-1;
 }
-.cardDownload2{
+.downloadImage .cardDownload2{
     position:absolute;
     top:50%;
     left:-15%;
-    z-index:1;
+    z-index:-1;
 }
-.tooltip1{
+.downloadImage .tooltip1{
     position:absolute;
     top:10%;
     right:0%;
     z-index:-1;
 }
-.tooltip2{
+.downloadImage .tooltip2{
     position:absolute;
     top:75%;
     right:60%;
     z-index:-1;
 }
+
+.downloadImage .cellphone .screen .overlay .body{
+    width:100%;
+    height:auto;
+}
+.downloadImage .cellphone .screen .overlay .body .top{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    background-color: var(--toneOne);
+    padding:5px 0px 0px;
+    position: relative;
+}
+.downloadImage .cellphone .screen .overlay .body .top .blackbar{
+    width:40%;
+    height:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    background-color: var(--toneNine);
+    border-bottom-right-radius:25px;
+    border-bottom-left-radius:25px;
+}
+.downloadImage .cellphone .screen .overlay .body .top .topbar,
+.downloadImage .cellphone .screen .overlay .body .top .topNav{
+    width:90%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.downloadImage .cellphone .screen .overlay .body .top .topbar .hour{
+    color: var(--toneSeven);
+    font-size: var(--smallSize);
+    font-weight: var(--boldWeight);
+}
+.downloadImage .cellphone .screen .overlay .body .top .topbar .iconsBunch,
+.downloadImage .cellphone .screen .overlay .body .top .topNav .iconsBunch{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:2px;
+}
+.downloadImage .cellphone .screen .overlay .body .top .topNav .iconsBunch{
+    gap:8px;
+}
+.downloadImage .cellphone .screen .overlay .body .top .topbar .iconsBunch .icons{
+    width:12px;
+    height:auto;
+}
+.downloadImage .cellphone .screen .overlay .body .top .topNav .iconsBunch .icons{
+    width:18px;
+    height:auto;
+}
+.downloadImage .cellphone .screen .overlay .body .top .topNav .iconsBunch .iconsArrow{
+    width:34px;
+    height:auto;
+}
+
