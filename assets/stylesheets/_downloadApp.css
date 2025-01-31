@@ -198,6 +198,7 @@ section.downloadImage{
     height: 600px;
     overflow-y: scroll;
     position:relative;
+    background-color: var(--white);
 }
 .topCellphone{
     width:100%;
@@ -208,13 +209,14 @@ section.downloadImage{
 .android{
     width:100%;
     height:auto;
+    margin-top:0px;
 }
 
 /* .downloadImage:hover .cellphone {
     transform: rotateX(10deg) rotateY(0deg);
 } */
 .downloadImage:hover .cellphone{
-    transform:translate(75%, 0%) rotateX(0deg) ;
+    transform:translate(80%, 0%) rotateX(0deg) ;
 }
 
 /* .cardsDownload{
