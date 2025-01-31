@@ -138,6 +138,7 @@ section.downloadImage{
     position:absolute;
     top:5%;
     left:-5%;
+    opacity:0.2;
     animation:snail 35s linear infinite;
 }
 @keyframes snail{
@@ -153,7 +154,7 @@ section.downloadImage{
     height:600px;
     border-radius:40px;
     overflow: hidden;
-    border:10px solid black;
+    border:10px solid var(--toneNine);
 
     /* transform: rotateX(15deg) rotateY(-10deg);
     transform-origin: center;
@@ -198,13 +199,15 @@ section.downloadImage{
     height: 600px;
     overflow-y: scroll;
     position:relative;
+    /* padding: 5px;
+    border:1px solid var(--toneFive); */
     background-color: var(--white);
 }
 .topCellphone{
     width:100%;
     height:auto;
     position:sticky;
-    top:0;
+    top:0px;
 }
 .android{
     width:100%;
@@ -251,5 +254,17 @@ section.downloadImage{
     position:absolute;
     top:60%;
     left:-15%;
+    z-index:1;
+}
+.tooltip1{
+    position:absolute;
+    top:20%;
+    right:0%;
+    z-index:-1;
+}
+.tooltip2{
+    position:absolute;
+    top:90%;
+    right:40%;
     z-index:1;
 }
