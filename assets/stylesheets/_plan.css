@@ -74,6 +74,7 @@
                     li{
                         list-style: none;
                         .itemPlan{
+                            cursor: pointer;
                             padding:15px 35px;
                             color: var(--toneSix);
                             font-size: var(--xMediumSize);
