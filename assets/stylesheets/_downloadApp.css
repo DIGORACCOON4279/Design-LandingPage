@@ -519,10 +519,10 @@
 
 /* Cellphone Profile Body */
 
-/* .downloadImage .cellphone .screen .overlay .body .bodyProfile{
+.downloadImage .cellphone .screen .overlay .body .bodyProfile{
     width:100%;
     height:auto;
-
+    overflow: hidden;
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile{
     width:100%;
@@ -531,43 +531,57 @@
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .background{
     width:100%;
     height:auto;
-    overflow: hidden;
 }
-.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile{
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile{
     width:100%;
     height:auto;
 }
-.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile{
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile{
     width:100%;
     height:auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position:relative;
+    padding:20px 0px 10px;
+    gap:10px;
+    border-bottom: 1px solid var(--toneThree);
 
 }
-.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile .avatarProfile{
-    width:auto;
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .avatarProfile{
+    width:50px;
+    border-radius:50%;
+    border:2px solid var(--white);
     height:auto;
-
-
+    position:absolute;
+    top:-35%;
 }
-.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile .userInfoProfile{
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .userInfoProfile{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
 }
-.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile .userInfoProfile .userNameProfile{
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .userInfoProfile .userNameProfile{
+    color:var(--toneSeven);
+    font-size:var(--lightSize);
+    font-weight:var(--boldWeight);
+
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .userInfoProfile .userProfession{
     color:var(--toneSix);
     font-size:var(--smallSize);
     font-weight:var(--mediumWeight);
-    color:red;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .profileSocialMedia .network{
+    text-decoration: none;
 }
 
-.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile .profileSocialMedia .network{
-    text-decoration: none;
-} */
+
+
 
 
 /* Footer */
