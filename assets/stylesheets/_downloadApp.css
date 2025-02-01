@@ -18,8 +18,6 @@
         align-items: center;
         text-align: center;
         gap:30px;
-
-
         .downloadInfo{
             width:100%;
             display: flex;
@@ -334,6 +332,7 @@
     /* align-items: center; */
     /* gap:10px; */
     position:relative;
+    /* overflow: hidden; */
 
 }
 
@@ -515,5 +514,145 @@
 }
 .downloadImage .cellphone .screen .overlay .body .top .header .topNavbar .icons{
     width:20px;
+    height:auto;
+}
+
+/* Cellphone Profile Body */
+
+/* .downloadImage .cellphone .screen .overlay .body .bodyProfile{
+    width:100%;
+    height:auto;
+
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile{
+    width:100%;
+    height:auto;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .background{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile{
+    width:100%;
+    height:auto;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile .avatarProfile{
+    width:auto;
+    height:auto;
+
+
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile .userInfoProfile{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile .userInfoProfile .userNameProfile{
+    color:var(--toneSix);
+    font-size:var(--smallSize);
+    font-weight:var(--mediumWeight);
+    color:red;
+}
+
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .alignmentProfile .headProfile .profileSocialMedia .network{
+    text-decoration: none;
+} */
+
+.downloadImage .cellphone .screen .overlay .body .footerProfile{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding:50px 0px;
+    background-color:var(--black);
+    margin-top: 150px;
+}
+.downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns .column{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    color:var(--toneSix);
+    font-size:var(--smallSize);
+    font-weight:var(--mediumWeight);
+}
+.downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns .column .titleColumn{
+    color:var(--toneFive);
+    font-size:var(--lightSize);
+    font-weight:var(--mediumWeight);
+}
+.downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns .column:nth-child(1){
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    order:4;
+    color:var(--toneSix);
+    font-size:var(--smallSize);
+    font-weight:var(--mediumWeight);
+}
+.downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns .column ul{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns .column ul li{
+    list-style: none;
+}
+.downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns .column ul li .item{
+    width:100%;
+    text-decoration: none;
+    color:var(--toneSix);
+    font-size:var(--smallSize);
+    font-weight:var(--mediumWeight);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns .column:nth-child(1) ul li .item{
+    width:100%;
+    text-decoration: none;
+    color:var(--toneSix);
+    font-size:var(--smallSize);
+    font-weight:var(--mediumWeight);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+.downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns .column ul li .item .icon{
+    width:16px;
     height:auto;
 }
