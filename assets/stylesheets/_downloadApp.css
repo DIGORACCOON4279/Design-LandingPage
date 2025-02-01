@@ -673,6 +673,76 @@
     text-align:left;
 }
 
+/* projectsCards */
+
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px 10px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding:50px 0px;
+    margin:auto;
+}
+
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .background{
+    width:100%;
+    border-radius: 10px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .iconsTop{
+    width:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: #222;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .contentCard{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .contentCard .titleProject{
+    color:var(--toneSeven);
+    font-size:var(--lightSize);
+    font-weight:var(--mediumWeight);
+    text-align:left;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .contentCard .iconsBottom{
+    width:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .contentCard .iconsBottom .icon{
+    width:18px;
+    cursor: pointer;
+}
+
 /* ctasProfile */
 
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .ctasProfile{
@@ -762,7 +832,6 @@
     gap:30px;
     padding:50px 10px;
     background-color:var(--black);
-    margin-top: 150px;
     overflow: hidden;
 }
 .downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns{
