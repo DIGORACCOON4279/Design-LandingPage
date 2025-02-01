@@ -447,14 +447,14 @@
 .downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu .blockMenu .icons{
     width:20px;
     height:auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
 
 .downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu .blockMenu .isotipo{
     width:32px;
     height:auto;
-    display:flex;
-    flex-direction: center;
-    align-items: center;
 }
 
 /* Menu */
