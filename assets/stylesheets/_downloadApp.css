@@ -597,6 +597,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:2px;
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .userInfoProfile .userNameProfile{
     color:var(--toneSeven);
@@ -608,9 +609,72 @@
     font-size:var(--smallSize);
     font-weight:var(--mediumWeight);
 }
-.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .profileSocialMedia .network{
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .userInfoProfile .profileSocialMedia .network{
     text-decoration: none;
 }
+
+/* blockAvailable */
+
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .blockAvailable .available{
+    padding:5px 10px;
+    border-radius: 25px;
+    color:var(--toneNine);
+    font-size:var(--lightSize);
+    font-weight:var(--mediumWeight);
+    background-color:var(--toneTwo) ;
+}
+
+/* appExperience */
+
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .appExperience {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    padding:20px 0px;
+    background-color:var(--toneOne) ;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .appExperience .title{
+    color:var(--toneSeven);
+    font-size:var(--regularSize);
+    font-weight:var(--semiboldWeight);
+    margin-bottom:5px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .appExperience .descriptionExperience{
+    width:90%;
+    color:var(--toneFive);
+    font-size:var(--smallSize);
+    font-weight:var(--semiboldWeight);
+    text-align:left;
+}
+
+/* tootlsSoftware */
+
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .tootlsSoftware{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    padding:20px 0px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .tootlsSoftware .title{
+    color:var(--toneSeven);
+    font-size:var(--regularSize);
+    font-weight:var(--semiboldWeight);
+    margin-bottom:5px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .tootlsSoftware .tools{
+    width:90%;
+    color:var(--toneFive);
+    font-size:var(--smallSize);
+    font-weight:var(--semiboldWeight);
+    text-align:left;
+}
+
+/* ctasProfile */
+
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .ctasProfile{
     width:100%;
     display:flex;
