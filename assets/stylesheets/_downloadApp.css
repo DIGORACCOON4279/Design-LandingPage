@@ -502,6 +502,23 @@
     font-weight:var(--mediumWeight);
     cursor: pointer;
 }
+.downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu .blockMenu .menu .downloadApp{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:5px;
+}
+.downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu .blockMenu .menu .downloadApp .itemDownload .downloadApp{
+    width:100%;
+    height:auto;
+}
+.downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu .blockMenu .menu .downloadApp .itemDownload .downloadApp{
+    width:70%;
+    height:auto;
+}
 
 /* TopNavbar */
 
@@ -535,6 +552,11 @@
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile{
     width:100%;
     height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile{
     width:100%;
@@ -545,9 +567,7 @@
     align-items: center;
     position:relative;
     padding:20px 0px 10px;
-    gap:10px;
-    border-bottom: 1px solid var(--toneThree);
-
+    gap:20px;
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .avatarProfile{
     width:50px;
@@ -555,21 +575,33 @@
     border:2px solid var(--white);
     height:auto;
     position:absolute;
-    top:-35%;
+    top:-12%;
 }
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .blockDescription{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .blockDescription .description{
+    width:90%;
+    color:var(--toneSeven);
+    font-size:var(--smallSize);
+    font-weight:var(--lightWeight);
+}
+
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .userInfoProfile{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .userInfoProfile .userNameProfile{
     color:var(--toneSeven);
     font-size:var(--lightSize);
     font-weight:var(--boldWeight);
-
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .userInfoProfile .userProfession{
     color:var(--toneSix);
@@ -579,10 +611,80 @@
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .profileSocialMedia .network{
     text-decoration: none;
 }
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .ctasProfile{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .ctasProfile .ctaItem{
+    width:90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 15px;
+    color:var(--toneSix);
+    font-size:var(--smallSize);
+    font-weight:var(--boldWeight);
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid var(--toneFour);
+    background-color:var(--blueOne) ;
+    transition:background 0.3s ease-in-out;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .ctasProfile .ctaItem:hover{
+    background-color:var(--white);
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .ctasProfile .ctaItem:nth-child(1){
+    background-color:var(--white);
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .ctasProfile .ctaItem:nth-child(1):hover{
+    background-color:var(--toneOne);
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .ctasProfile .ctaItem:nth-child(1) .plan{
+    width:auto;
+    padding:3px 10px;
+    color:var(--toneNine);
+    font-size:var(--smallSize);
+    font-weight:var(--boldWeight);
+    border-radius: 10px;
+    background-color:var(--blueTwo) ;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .ctasProfile .ctaItem .icon{
+    width:18px;
+    height:auto;
+}
 
+/* filterProjects */
 
-
-
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .filterProjects{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:5px;
+    padding:20px 10px;
+    border-top: 1px solid var(--toneThree);
+    border-bottom: 1px solid var(--toneThree);
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .filterProjects .filters{
+    width:auto;
+    padding:5px 10px;
+    color:var(--toneSix);
+    font-size:var(--smallSize);
+    font-weight:var(--semiboldWeight);
+    text-decoration: none;
+    border-radius: 10px;
+    background-color:var(--toneOne) ;
+    transition:background-color 0.3s ease-in-out;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .filterProjects .filters:hover{
+    background-color:var(--toneTwo) ;
+}
 
 /* Footer */
 
