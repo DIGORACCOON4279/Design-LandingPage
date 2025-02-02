@@ -408,7 +408,7 @@
     top:0px;
     left:0px;
     margin:auto;
-    background-color:var(--toneSeven);
+    background-color:var(--black);
 }
 .downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu{
     width:100%;
@@ -571,7 +571,7 @@
     border:2px solid var(--white);
     height:auto;
     position:absolute;
-    top:-12%;
+    top:-4.5%;
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .profile .blockProfile .headProfile .blockDescription{
     width:100%;
