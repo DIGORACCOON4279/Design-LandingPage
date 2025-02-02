@@ -167,7 +167,7 @@
     transition: transform 0.5s ease, box-shadow 0.5s ease; */
 
     transform-style: preserve-3d;
-    /* transform: translate(50%, -5%) rotateX(20deg) rotateY(-10deg); */
+    transform: translate(50%, -5%) rotateX(20deg) rotateY(-10deg);
     transition: transform 0.3s ease;
     box-shadow: 0px 4px 32px 6px #75757536;
 
@@ -266,9 +266,9 @@
 
 /* Con esta estoy trabajando */
 
-/* .downloadImage:hover .cellphone{
+.downloadImage:hover .cellphone{
     transform:translate(80%, 0%) rotateX(0deg) ;
-} */
+}
 
 
 
@@ -328,12 +328,7 @@
     height:auto;
     display:flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* gap:10px; */
     position:relative;
-    /* overflow: hidden; */
-
 }
 
 
@@ -351,8 +346,6 @@
     left:0px;
     z-index: 9;
 }
-
-
 .downloadImage .cellphone .screen .overlay .body .top .blackbar{
     width:40%;
     height:10px;
@@ -415,7 +408,6 @@
     top:0px;
     left:0px;
     margin:auto;
-    /* padding:10px 10px; */
     background-color:var(--toneSeven);
 }
 .downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu{
@@ -424,8 +416,6 @@
     display:flex;
     justify-content:center;
     align-items: center;
-    /* padding:10px 10px; */
-
 }
 .downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu .blockMenu{
     width:100%;
@@ -700,10 +690,44 @@
     justify-content: center;
     align-items: center;
     position:relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .background{
     width:100%;
+    height:170px;
+    position:relative;
+    transition: 0.3s ease-in-out;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .backgroundTop{
+    width:100%;
+    height: 100%;
     border-radius: 10px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .background:after{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius: 10px;
+    opacity: 0;
+    visibility:hidden;
+    background-color:var(--backgroundThree);
+    transition: background-color 0.3s ease-in-out, visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card:hover .background:after{
+    content:"";
+    width:100%;
+    height:100%;
+    opacity: 1;
+    visibility:visible;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card:hover .iconsTop{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0%);
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .iconsTop{
     width:auto;
@@ -711,10 +735,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap:5px;
+    padding:10px;
     position:absolute;
     top:0;
     right:0;
-    background-color: #222;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-100%);
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .contentCard{
     width:100%;
@@ -738,8 +767,21 @@
     align-items: center;
     gap:10px;
 }
-.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .contentCard .iconsBottom .icon{
-    width:18px;
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .contentCard .iconsBottom .set{
+    width:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .contentCard .iconsBottom .set .number{
+    color:var(--toneSix);
+    font-size:var(--smallSize);
+    font-weight:var(--regularWeight);
+}
+.downloadImage .cellphone .screen .overlay .body .bodyProfile .projectsCards .splitblock .card .contentCard .iconsBottom .set .icon{
+    width:16px;
     cursor: pointer;
 }
 
