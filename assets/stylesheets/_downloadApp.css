@@ -478,20 +478,26 @@
     height:auto;
     display:flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     gap:10px;
 }
 .downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu .blockMenu .menu ul li {
+    /* width:100%; */
     list-style: none;
 }
 .downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu .blockMenu .menu ul li .link{
+    width:max-content;
+    height:auto;
     text-decoration: none;
     color:var(--toneSix);
     font-size:var(--smallSize);
     font-weight:var(--mediumWeight);
     cursor: pointer;
 }
+
+/* downloadApp */
+
 .downloadImage .cellphone .screen .overlay .body .top .header .sectionMenu .blockMenu .menu .downloadApp{
     width:100%;
     height:auto;
