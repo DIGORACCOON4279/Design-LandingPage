@@ -308,7 +308,7 @@
     position:absolute;
     top:50%;
     left:-15%;
-    z-index:-1;
+    z-index:1;
 }
 .downloadImage .tooltip1{
     position:absolute;
