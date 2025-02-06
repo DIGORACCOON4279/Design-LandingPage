@@ -1,0 +1,168 @@
+
+/* Container */
+
+/* Tool Section */
+
+.toolSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    .toolSectionContainer{
+        max-width:1300px;
+        width:100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:50px;
+        .toolSides{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            position:relative;
+            background-color: var(--toneOne);
+            border-radius: 20px;
+            overflow:hidden;
+            #toolOne,
+            #toolTwo{
+                display:none;
+            }
+            #toolOne:checked ~ .overlay,
+            #toolTwo:checked ~ .overlay {
+                opacity:1;
+                visibility:visible;
+            }
+            #toolOne:checked + label .plus,
+            #toolTwo:checked + label .plus{
+                transform:rotate(135deg);
+            }
+            label{
+                .plus{
+                    width:46px;
+                    height:auto;
+                    border-radius: 50%;
+                    padding:0px;
+                    z-index: 1;
+                    position:absolute;
+                    top:2.5%;
+                    right:2.5%;
+                    transform:rotate(0deg);
+                    background-color: var(--toneNine);
+                    transition:transform 0.3s linear, background-color 0.3s linear;
+                    &:hover{
+                        background-color: var(--toneEight);
+                    }
+                }
+            }
+            .lay{
+                width: 100%;
+                height: 600px;
+                /* background-image: url("../../img/backgroundAboutus1.png");
+                background-repeat: no-repeat;
+                background-position: 100%;
+                background-size: cover; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                background-color: var(--toneOne);
+                transition:opacity 0.3s linear0.3s linear, visibility 0.3s linear, background-color 0.3s linear;
+                .layBlock{
+                    width:80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap:50px;
+                    .toolContent{
+                        width: 100%;
+                        display: flex;
+                        /* flex-direction: column; */
+                        justify-content: center;
+                        align-items: flex-start;
+                        margin:auto;
+                        .titleTool{
+                            color:var(--toneSeven);
+                            font-size:var(--xxLargeSize);
+                            font-weight:var(--boldWeight);
+                            text-align: left;
+                        }
+                    }
+                    .proofCardBlock{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .proofCardImage{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            .overlay{
+                width: 100%;
+                height: 600px;
+                position:absolute;
+                top:0;
+                left:0;
+                opacity:0;
+                visibility:hidden;
+                /* background-image: url("../../img/backgroundAboutus2.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                background-color: var(--black);
+                transition:opacity 0.3s linear, visibility 0.3s linear, background-color 0.3s linear;
+                .toolContent{
+                    width: 80%;
+                    height:auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin:auto;
+                    gap:0px;
+                    .titleTool{
+                        width: 100%;
+                        color:var(--toneThree);
+                        font-size:var(--xxLargeSize);
+                        font-weight:var(--boldWeight);
+                        text-align: left;
+                        border-right:5px solid var(--toneNine);
+                    }
+                    .infoToolBlock{
+                        width: 100%;
+                        height:100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding-left:50px;
+                        gap:20px;
+                        .imagotipe{
+                            width: auto;
+                            height:auto;
+                        }
+                        .infoTool{
+                            width: 100%;
+                            color:var(--toneSix);
+                            font-size:var(--largeSize);
+                            font-weight:var(--boldWeight);
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
