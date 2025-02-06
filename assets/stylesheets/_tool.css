@@ -69,29 +69,32 @@
                 background-size: cover; */
                 display: flex;
                 justify-content: flex-start;
-                align-items: center;
+                align-items: flex-start;
                 border-radius: 25px;
                 background-color: var(--toneOne);
                 transition:opacity 0.3s linear0.3s linear, visibility 0.3s linear, background-color 0.3s linear;
                 .layBlock{
                     width:100%;
-                    height:100%;
+                    height:auto;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    gap:50px;
+                    /* gap:50px; */
                     .toolContent{
                         width: 100%;
                         display: flex;
                         /* flex-direction: column; */
-                        justify-content: center;
+                        justify-content: flex-start;
                         align-items: flex-start;
                         .titleTool{
+                            width:100%;
                             color:var(--toneSeven);
                             font-size:var(--xxLargeSize);
                             font-weight:var(--boldWeight);
                             text-align: left;
+                            text-wrap-style:balance;
+                            margin: 50px;
                         }
                     }
                     .proofCardBlock{
