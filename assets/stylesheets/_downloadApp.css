@@ -10,6 +10,8 @@
     justify-content: center;
     align-items: center;
     margin: 150px auto;
+    overflow: hidden;
+
     .downloadContainer{
         max-width:1300px;
         display: flex;
@@ -309,6 +311,12 @@
     top:50%;
     left:-15%;
     z-index:1;
+}
+.downloadImage .cardDownload3{
+    position:absolute;
+    top:55%;
+    right:-15%;
+    z-index:-1;
 }
 .downloadImage .tooltip1{
     position:absolute;
