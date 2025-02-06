@@ -118,47 +118,65 @@
                 background-position: center;
                 background-size: cover; */
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 border-radius: 25px;
                 background-color: var(--black);
                 transition:opacity 0.3s linear, visibility 0.3s linear, background-color 0.3s linear;
                 .toolContent{
-                    width: 80%;
-                    height:auto;
+                    width: 100%;
+                    height:100%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: flex-start;
                     align-items: flex-start;
                     margin:auto;
-                    gap:0px;
+                    gap:20px;
+                    padding:50px;
                     .titleTool{
                         width: 100%;
                         color:var(--toneThree);
-                        font-size:var(--xxLargeSize);
+                        font-size:var(--xLargeSize);
                         font-weight:var(--boldWeight);
                         text-align: left;
-                        border-right:5px solid var(--toneNine);
+                        padding-bottom:20px;
+                        border-bottom:5px solid var(--toneNine);
                     }
                     .infoToolBlock{
                         width: 100%;
                         height:100%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
+                        justify-content: flex-start;
                         align-items: flex-start;
-                        padding-left:50px;
                         gap:20px;
                         .imagotipe{
                             width: auto;
                             height:auto;
                         }
-                        .infoTool{
-                            width: 100%;
-                            color:var(--toneSix);
-                            font-size:var(--largeSize);
-                            font-weight:var(--boldWeight);
-                            text-align: left;
+                        .advantages{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap:10px;
+                            .advantage{
+                                width: 100%;
+                                color:var(--toneSix);
+                                font-size:var(--mediumSize);
+                                font-weight:var(--semiboldWeight);
+                                text-align: left;
+                                .span{
+                                    color:var(--toneFive);
+                                    font-weight:var(--boldWeight);
+                                }
+                                &:nth-child(5){
+                                    color:var(--toneFive);
+                                    font-size:var(--regularSize);
+                                    font-weight:var(--mediumWeight);
+                                    margin-top:20px;
+                                }
+                            }
                         }
                     }
                 }
