@@ -1,0 +1,111 @@
+
+
+/* Container */
+
+/* About Us Section */
+
+.aboutusSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    .aboutusContainer{
+        max-width:1300px;
+        width:100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position:relative;
+        #aboutus{
+            display:none;
+        }
+        #aboutus:checked ~ .overlay {
+            opacity:1;
+            visibility:visible;
+        }
+        #aboutus:checked + label .plus {
+            transform:rotate(0deg);
+        }
+        label{
+            .plus{
+                width:46px;
+                height:auto;
+                border-radius: 50%;
+                padding:0px;
+                z-index: 1;
+                position:absolute;
+                top:5%;
+                right:2%;
+                transform:rotate(135deg);
+                background-color: var(--toneNine);
+                transition:transform 0.3s linear, background-color 0.3s linear;
+                &:hover{
+                    background-color: var(--toneEight);
+                }
+            }
+        }
+        .lay{
+            width: 100%;
+            height: 500px;
+            /* background-image: url("../../img/backgroundAboutus1.png");
+            background-repeat: no-repeat;
+            background-position: 100%;
+            background-size: cover; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            background-color: var(--toneOne);
+            transition:opacity 0.3s linear0.3s linear, visibility 0.3s linear, background-color 0.3s linear;
+            .aboutContent{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                .titleAboutus{
+                    color:var(--toneFive);
+                    font-size:var(--xxLargeSize);
+                    font-weight:var(--boldWeight);
+                    text-align: left;
+                }
+            }
+        }
+        .overlay{
+            width: 100%;
+            height: 500px;
+            position:absolute;
+            top:0;
+            left:0;
+            opacity:0;
+            visibility:hidden;
+            /* background-image: url("../../img/backgroundAboutus2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            background-color: var(--black);
+            transition:opacity 0.3s linear, visibility 0.3s linear, background-color 0.3s linear;
+            .aboutContent{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                .titleAboutus{
+                    color:var(--toneThree);
+                    font-size:var(--xxLargeSize);
+                    font-weight:var(--boldWeight);
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
