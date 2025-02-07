@@ -62,10 +62,6 @@
             .lay{
                 width: 100%;
                 height: 600px;
-                /* background-image: url("../../img/backgroundAboutus1.png");
-                background-repeat: no-repeat;
-                background-position: 100%;
-                background-size: cover; */
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-start;
@@ -73,18 +69,16 @@
                 background-color: var(--toneOne);
                 transition:opacity 0.3s linear0.3s linear, visibility 0.3s linear, background-color 0.3s linear;
                 .layBlock{
-                    width:100%;
+                    width:80%;
                     height:auto;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    /* align-items: center; */
                     gap:20px;
-                    margin: 50px 50px 0px;
+                    margin: 50px;
                     .toolContent{
                         width: 100%;
                         display: flex;
-                        /* flex-direction: column; */
                         justify-content: flex-start;
                         align-items: flex-start;
                         .titleTool{
@@ -94,7 +88,6 @@
                             font-weight:var(--boldWeight);
                             text-align: left;
                             text-wrap-style:balance;
-                            /* margin: 50px 50px 0px; */
                         }
                     }
                     .iphoneToolBlock{
@@ -104,6 +97,7 @@
                         align-items: flex-end;
                         .iphoneTool{
                             width: auto;
+                            object-fit: cover;
                         }
                     }
                 }
@@ -116,10 +110,6 @@
                 left:0;
                 opacity:0;
                 visibility:hidden;
-                /* background-image: url("../../img/backgroundAboutus2.png");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover; */
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -180,6 +170,30 @@
                                     margin-top:20px;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+        .toolSides:nth-child(2){
+            .lay{
+                .layBlock{
+                    width:80%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 50px;
+                    .carouselToolBlock{
+                        width: 100%;
+                        height:100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .carouselTool{
+                            width: auto;
+                            object-fit: cover;
                         }
                     }
                 }
