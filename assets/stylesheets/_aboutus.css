@@ -28,7 +28,7 @@
             visibility:visible;
         }
         #aboutus:checked + label .plus {
-            transform:rotate(0deg);
+            transform:rotate(135deg);
         }
         label{
             .plus{
@@ -40,7 +40,7 @@
                 position:absolute;
                 top:5%;
                 right:2%;
-                transform:rotate(135deg);
+                transform:rotate(0deg);
                 background-color: var(--toneNine);
                 transition:transform 0.3s linear, background-color 0.3s linear;
                 &:hover{
