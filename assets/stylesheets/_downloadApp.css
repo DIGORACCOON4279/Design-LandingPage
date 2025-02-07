@@ -1027,6 +1027,9 @@
 .downloadImage .cellphone .screen .overlay .body .footerProfile .sectionColumns .column .newsletter .subscribeItems .ctaSubscribe:hover{
     background-color: var(--toneEight);
 }
+
+/* Section Row */
+
 .downloadImage .cellphone .screen .overlay .body .footerProfile .sectionRow{
     width:100%;
     max-width: 1300px;
