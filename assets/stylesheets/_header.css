@@ -390,7 +390,7 @@
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    gap:20px;
+                    gap:10px;
                     margin-left:10px;
                     .register{
                         width:100px;
@@ -442,7 +442,8 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        .iconUser{
+                        .iconUser,
+                        .iconMagnify{
                             width:30px;
                             height:30px;
                             cursor:pointer;
