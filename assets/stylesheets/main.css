@@ -2,6 +2,9 @@
 
 @import "_commons.css";
 @import "_header.css";
+@import "_search.css";
+@import "_register.css";
+@import "_login.css";
 @import "_heroSection.css";
 @import "_aboutus.css";
 @import "_options.css";
