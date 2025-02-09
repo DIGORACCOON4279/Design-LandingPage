@@ -164,6 +164,12 @@
         justify-content: space-between;
         align-items: center;
         padding:20px 0px;
+        .imagotipoIcon{
+            width:auto;
+            .imagotipo{
+                width:100%;
+            }
+        }
         .copyRight{
             display: flex;
             flex-direction: row;
