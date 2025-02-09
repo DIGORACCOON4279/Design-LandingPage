@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family:var(--font-family);
+    font-family:var(--fontFamily);
     background-color:var(--white);
 }
 html{
