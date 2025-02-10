@@ -405,6 +405,7 @@
                         color:var(--white);
                         font-size:var(--lightSize);
                         font-weight:var(--mediumWeight);
+                        font-family:var(--fontFamily);
                         border-radius: 10px;
                         border:1px solid var(--blueTwo);
                         overflow:hidden;

@@ -72,12 +72,12 @@
 .greeting{
     width:auto;
     color:var(--toneThree);
-    font-size: 25px;
+    font-size: var(--mediumLargeSize);
     text-align: center;
 }
 
 .imagotipo{
-    width:200px;
+    width:170px;
 }
 
 .searchBlock{

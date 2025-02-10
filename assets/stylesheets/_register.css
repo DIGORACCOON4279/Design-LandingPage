@@ -73,13 +73,13 @@
     justify-content: center;
     align-items: center;
     gap:0px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .greetingRegister{
     color:var(--toneThree);
-    font-size: 25px;
     text-align: center;
+    font-size: var(--mediumLargeSize);
 }
 
 /* .imagotipoRegister{
@@ -171,7 +171,8 @@ input:-webkit-autofill {
     align-items: center;
     gap:5px;
     padding:10px 20px;
-    margin-top: 15px;
+    margin-top: 50px;
+    margin-bottom: 5px;
     background-color:var(--blueFive);
     text-align: center;
     text-decoration: none;
@@ -221,20 +222,20 @@ input:-webkit-autofill {
     gap:10px;
 }
 
+.sentence{
+    color:var(--white);
+    font-size: var(--smallSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--regularWeight);
+}
+
 .goLogin{
     background-color:#00000000;
     color:var(--white);
-    font-size: var(--lightSize);
+    font-size: var(--smallSize);
     font-family: var(--fontFamily);
     font-weight: var(--mediumWeight);
     border: 1px solid transparent;
-}
-
-.sentence{
-    color:var(--white);
-    font-size: var(--lightSize);
-    font-family: var(--fontFamily);
-    font-weight: var(--regularWeight);
 }
 
 .goLogin:hover{
