@@ -1,0 +1,245 @@
+
+/* Header */
+
+/* Register Modal */
+
+#coverLoginModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--backgroundThree);
+    backdrop-filter: blur(25px);
+    z-index: 98;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modalLogin{
+    width:100;
+    max-width: 450px;
+    min-width: 320px;
+    height:auto;
+    border-radius: 20px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding:20px 20px 40px;
+    z-index: 99;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: inset 0 0 50px #b1b1b136,
+                inset 0 0 30px var(--backgroundThree);
+    opacity: 0;
+    visibility:hidden;
+    transition: transform 03s ease-in-out, 0.3s ease-in-out, opacity 0.3s ease-in-out ;
+}
+
+.modalLogin.active,
+#coverLoginModal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modalLogin.active{
+    transform:translate(-50%, -50%);
+}
+
+/* Display Register */
+
+.displayLogin{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+}
+
+/* Title Register Modal */
+
+.titleLoginModal{
+    width:calc(100% - 100px);
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+    margin-bottom: 15px;
+}
+
+.greetingLogin{
+    color:var(--toneThree);
+    font-size: 25px;
+    text-align: center;
+}
+
+/* .imagotipoRegister{
+    width:200px;
+} */
+
+/* Register Block */
+
+.loginBlock{
+    width:calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form - Register Block */
+
+form.loginContainer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+.formGroup{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:5px;
+}
+
+label{
+    color:var(--white);
+    font-size: var(--lightSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--regularWeight);
+
+}
+
+input{
+    width:100%;
+    color: var(--blueThree);
+    font-size: var(--lightSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--regularWeight);
+    padding:10px 10px 10px 15px;
+    border-radius:10px;
+    border:1px solid var(--toneSeven);
+    background-color: var(--black);
+}
+
+input:focus-within{
+    outline: 1px solid var(--blueThree);
+}
+
+input:-webkit-autofill {
+    background-color: var(--black);
+    color: var(--blueThree);
+    -webkit-text-fill-color: var(--blueThree);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Close Register Bar */
+
+.closeLoginBlock{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.closeLoginBlock #iconLoginClose{
+    width:24px;
+    padding:0px;
+    background-color:var(--black);
+    border:none;
+}
+
+/* Cts Register Modal */
+
+.btnLogin{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    padding:10px 20px;
+    margin-top: 15px;
+    background-color:var(--blueFive);
+    text-align: center;
+    text-decoration: none;
+    color:var(--white);
+    font-size:var(--regularSize);
+    font-weight:var(--mediumWeight);
+    font-family:var(--fontFamily);
+    border-radius: 10px;
+    border:1px solid var(--blueFive);
+    overflow:hidden;
+    transform:scale(100%);
+    transition: transform 0.3s ease-in-out;
+    &:after{
+        content:"";
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        top:0;
+        left:0;
+        opacity:0;
+        transform:translate(-100%);
+        transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out ;
+    }
+    &:hover:after{
+        content:"login ❯";
+        color:var(--white);
+        font-size:var(--regularSize);
+        font-weight:var(--mediumWeight);
+        opacity:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:var(--blueFour);
+        border:1px solid var(--blueFour);
+        transform:translate(0%);
+    }
+}
+
+/*  Go to Login  */
+
+.ctsLoginModal{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.sentence{
+    color:var(--white);
+    font-size: var(--lightSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--regularWeight);
+}
+
+.goRegister{
+    background-color:#00000000;
+    color:var(--white);
+    font-size: var(--lightSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--mediumWeight);
+    border: 1px solid transparent;
+}
+
+.goRegister:hover{
+    color:var(--blueThree);
+    text-decoration: underline;
+}
+
+
