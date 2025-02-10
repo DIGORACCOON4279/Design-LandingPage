@@ -125,16 +125,26 @@ label{
 
 input{
     width:100%;
-    color:var(--black);
+    color: var(--blueThree);
     font-size: var(--lightSize);
     font-family: var(--fontFamily);
     font-weight: var(--regularWeight);
     padding:10px 10px 10px 15px;
     border-radius:10px;
+    border:1px solid var(--toneSeven);
+    background-color: var(--black);
 }
 
+input:focus-within{
+    outline: 1px solid var(--blueThree);
+}
 
-
+input:-webkit-autofill {
+    background-color: var(--black);
+    color: var(--blueThree);
+    -webkit-text-fill-color: var(--blueThree);
+    transition: background-color 5000s ease-in-out 0s;
+}
 
 /* Close Register Bar */
 
@@ -200,9 +210,6 @@ input{
     }
 }
 
-
-
-
 /*  Go to Login  */
 
 .ctsRegisterModal{
@@ -231,7 +238,7 @@ input{
 }
 
 .goLogin:hover{
-    color:var(--toneTwo);
+    color:var(--blueThree);
     text-decoration: underline;
 }
 
