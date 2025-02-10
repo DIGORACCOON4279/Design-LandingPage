@@ -1,0 +1,238 @@
+
+/* Header */
+
+/* Register Modal */
+
+#coverRegisterModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--backgroundThree);
+    backdrop-filter: blur(25px);
+    z-index: 98;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modalRegister{
+    width:100;
+    max-width: 450px;
+    min-width: 320px;
+    height:auto;
+    border-radius: 20px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding:20px 20px 40px;
+    z-index: 99;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: inset 0 0 50px #b1b1b136,
+                inset 0 0 30px var(--backgroundThree);
+    opacity: 0;
+    visibility:hidden;
+    transition: transform 03s ease-in-out, 0.3s ease-in-out, opacity 0.3s ease-in-out ;
+}
+
+.modalRegister.active,
+#coverRegisterModal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modalRegister.active{
+    transform:translate(-50%, -50%);
+}
+
+/* Display Register */
+
+.displayRegister{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+}
+
+/* Title Register Modal */
+
+.titleRegisterModal{
+    width:calc(100% - 100px);
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+    margin-bottom: 15px;
+}
+
+.greetingRegister{
+    color:var(--toneThree);
+    font-size: 25px;
+    text-align: center;
+}
+
+.imagotipoRegister{
+    width:200px;
+}
+
+/* Register Block */
+
+.registerBlock{
+    width:calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form - Register Block */
+
+form.registerContainer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+.formGroup{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:5px;
+}
+
+label{
+    color:var(--white);
+    font-size: var(--lightSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--regularWeight);
+
+}
+
+input{
+    width:100%;
+    color:var(--black);
+    font-size: var(--lightSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--regularWeight);
+    padding:10px 10px 10px 15px;
+    border-radius:10px;
+}
+
+
+
+
+/* Close Register Bar */
+
+.closeRegisterBlock{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.closeRegisterBlock #iconRegisterClose{
+    width:24px;
+    padding:0px;
+    background-color:var(--black);
+    border:none;
+}
+
+/* Cts Register Modal */
+
+.btnRegister{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    padding:10px 20px;
+    margin-top: 15px;
+    background-color:var(--blueFive);
+    text-align: center;
+    text-decoration: none;
+    color:var(--white);
+    font-size:var(--regularSize);
+    font-weight:var(--mediumWeight);
+    font-family:var(--fontFamily);
+    border-radius: 10px;
+    border:1px solid var(--blueFive);
+    overflow:hidden;
+    transform:scale(100%);
+    transition: transform 0.3s ease-in-out;
+    &:after{
+        content:"";
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        top:0;
+        left:0;
+        opacity:0;
+        transform:translate(-100%);
+        transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out ;
+    }
+    &:hover:after{
+        content:"Register ❯";
+        color:var(--white);
+        font-size:var(--regularSize);
+        font-weight:var(--mediumWeight);
+        opacity:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:var(--blueFour);
+        border:1px solid var(--blueFour);
+        transform:translate(0%);
+    }
+}
+
+
+
+
+/*  Go to Login  */
+
+.ctsRegisterModal{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.goLogin{
+    background-color:#00000000;
+    color:var(--white);
+    font-size: var(--lightSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--mediumWeight);
+    border: 1px solid transparent;
+}
+
+.sentence{
+    color:var(--white);
+    font-size: var(--lightSize);
+    font-family: var(--fontFamily);
+    font-weight: var(--regularWeight);
+}
+
+.goLogin:hover{
+    color:var(--toneTwo);
+    text-decoration: underline;
+}
+
+
