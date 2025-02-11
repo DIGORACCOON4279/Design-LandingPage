@@ -1,0 +1,4 @@
+# No subir estos archivos al repo
+
+*.map
+node_modules/
