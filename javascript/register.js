@@ -3,6 +3,14 @@ const openRegister = document.querySelector(".openRegisterModal");
 const closeRegister = document.querySelector(".closeRegisterModal");
 const modalRegister = document.querySelector(".modalRegister");
 const coverRegister = document.querySelector("#coverRegisterModal");
+const goLogin = document.querySelector(".goLogin");
+
+goLogin.addEventListener("click", () => {
+    modalRegister.classList.remove("active");
+    coverRegister.classList.remove("active");
+    modalLogin.classList.add("active");
+    coverLogin.classList.add("active");
+});
 
 // Función para abrir el modal
 openRegister.addEventListener("click", () => {
