@@ -324,7 +324,7 @@ input:-webkit-autofill {
 
 #messageNewLogin{
     width:350px;
-    height:80px;
+    height:auto;
     display: flex;
     justify-content: center;
     align-items: center;

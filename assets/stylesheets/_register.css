@@ -248,7 +248,7 @@ input:-webkit-autofill {
 
 #messageNewRegistration{
     width:350px;
-    height:80px;
+    height:auto;
     display: flex;
     justify-content: center;
     align-items: center;

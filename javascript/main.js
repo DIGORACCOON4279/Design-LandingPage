@@ -87,7 +87,7 @@ const registerUser = (event) => {
 
             const messageRegistration = document.createElement("div");
             messageRegistration.classList.add("messageRegistration");
-            messageRegistration.innerHTML = `<p class="registration">Successful registration! 🎉</p>`;
+            messageRegistration.innerHTML = `<p class="registration">Registration successful! Let’s get started ✨</p>`;
 
 
             const messageNewRegistration = document.getElementById('messageNewRegistration'); // Reemplaza con el ID real de tu contenedor
@@ -157,7 +157,7 @@ const loginUser = (event) => {
 
             const messageLogin = document.createElement("div");
             messageLogin.classList.add("messageLogin");
-            messageLogin.innerHTML = `<p class="login">Successful registration! 🎉</p>`;
+            messageLogin.innerHTML = `<p class="login">Signed in successfully! Enjoy your session 🚀</p>`;
 
 
             const messageNewLogin = document.getElementById('messageNewLogin'); // Reemplaza con el ID real de tu contenedor
