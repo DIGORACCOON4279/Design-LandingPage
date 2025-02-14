@@ -120,7 +120,6 @@ const registerUser = (event) => {
 document.querySelector(".registerContainer").addEventListener("submit", registerUser);
 
 
-
 // Login
 
 // const loginUser = () => {
