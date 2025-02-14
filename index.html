@@ -256,22 +256,22 @@
                                     <form class="registerContainer">
                                         <div class="formGroup">
                                             <label for="name">Name</label>
-                                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                                            <input type="text" id="registerName" name="name" placeholder="Enter your name" required>
                                         </div>
 
                                         <div class="formGroup">
                                             <label for="email">Email</label>
-                                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                            <input type="email" id="registerEmail" name="email" placeholder="Enter your email" required>
                                         </div>
 
                                         <div class="formGroup">
                                             <label for="password">Password</label>
-                                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                            <input type="password" id="registerPassword" name="password" placeholder="Enter your password" required>
                                         </div>
 
                                         <div class="formGroup">
                                             <label for="confirm-password">Repite your Password</label>
-                                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter your password again" required>
+                                            <input type="password" id="confirmRegisterPassword" name="confirm-password" placeholder="Enter your password again" required>
                                         </div>
 
                                         <button type="submit" class="btnRegister">Register</button>
@@ -285,6 +285,13 @@
                                 </div>
 
                             </div>
+
+                            <section id="messageNewRegistration">
+
+                                <!-- Here Registration Popup -->
+
+                            </section>
+
                         </div>
 
                         <div class="linkUserIcon">
@@ -301,7 +308,7 @@
 
                         <div class="modalLogin">
                             <div class="closeLoginBlock">
-                                <img src="img/closeWhite.svg" alt="" class="closeLoginModal" id="iconLoginClose">
+                                <img src="img/closeWhite.svg" alt="Close Icon" class="closeLoginModal" id="iconLoginClose">
                             </div>
                             <div class="displayLogin">
 
@@ -316,12 +323,12 @@
 
                                         <div class="formGroup">
                                             <label for="email">Email</label>
-                                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                            <input type="email" id="loginEmail" name="email" placeholder="Enter your email" required>
                                         </div>
 
                                         <div class="formGroup">
                                             <label for="password">Password</label>
-                                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                            <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
                                         </div>
 
 
@@ -339,7 +346,7 @@
                             </div>
 
                             <div class="enterWays">
-                                <p class="choice">  OR  <p>
+                                <p class="choice">  OR  </p>
                                 <div class="ctasItem">
                                     <button type="submit" class="ctaItem">
                                         <img src="img/gmailBlack.svg" alt="" class="item">
@@ -351,13 +358,22 @@
                                     </button>
 
                                 </div>
+
                             </div>
+
+                            <section id="messageNewLogin">
+
+                                <!-- Here Login Popup -->
+
+                            </section>
 
                         </div>
 
                         <div class="linkUserIcon">
                             <img src="img/user.svg" alt="User Icon" class="iconUser openLoginModal">
                         </div>
+
+                        <!-- <button id="logoutButton">Sign out</button> -->
 
                         <!-- Search Modal -->
 
@@ -408,6 +424,7 @@
         </div>
 
     </header>
+
 
     <!-- Main -->
 
@@ -3624,6 +3641,14 @@
         </section>
 
     </footer>
+
+    <!-- 🔹 Firebase SDK y configuración 🔹 -->
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script> <!-- 🔥 Cambiado -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="javascript/firebase-config.js"></script>
+    <script src="javascript/main.js"></script>
 
     <!-- JS -->
 
