@@ -202,3 +202,19 @@ document.querySelector(".loginContainer").addEventListener("submit", loginUser);
 // document.getElementById("logoutButton").addEventListener("click", logoutUser);
 
 
+// Authentication con Google
+
+const loginWithGoogle = () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+
+    auth.signInWithPopup(provider)
+        .then(result => {
+            const user = result.user;
+            console.log("✅ Logged in with Google:", user.email);
+            alert(`Welcome, ${user.displayName}! 🎉`);
+        })
+        .catch(error => {
+            console.error("❌ Error with Google Login:", error.message);
+            alert(error.message);
+        });
+};
