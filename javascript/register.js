@@ -3,6 +3,7 @@ const openRegister = document.querySelector(".openRegisterModal");
 const closeRegister = document.querySelector(".closeRegisterModal");
 const modalRegister = document.querySelector(".modalRegister");
 const coverRegister = document.querySelector("#coverRegisterModal");
+const openRegisterfromHeroSection = document.querySelector("#openRegisterfromHeroSection");
 const goLogin = document.querySelector(".goLogin");
 
 goLogin.addEventListener("click", () => {
@@ -28,4 +29,9 @@ closeRegister.addEventListener("click", () => {
 coverRegister.addEventListener("click", () => {
     modalRegister.classList.remove("active");
     coverRegister.classList.remove("active");
+});
+
+openRegisterfromHeroSection.addEventListener("click", () => {
+    modalRegister.classList.add("active");
+    coverRegister.classList.add("active");
 });
