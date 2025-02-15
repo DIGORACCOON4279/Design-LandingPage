@@ -1,33 +1,3 @@
-// import { db } from "firebase-config.js";
-// import { collection, getDocs } from "firebase/firestore";
-
-// // Intentar obtener documentos de prueba
-// const fetchData = async () => {
-//     try {
-//         const querySnapshot = await getDocs(collection(db, "register"));
-//         querySnapshot.forEach(doc => {
-//             console.log(doc.id, " => ", doc.data());
-//         });
-//     } catch (error) {
-//         console.error("Error obteniendo datos:", error);
-//     }
-// };
-
-// fetchData();
-
-
-
-// document.addEventListener("DOMContentLoaded", async () => {
-//     try {
-//         const querySnapshot = await db.collection("register").get();
-//         querySnapshot.forEach(doc => {
-//             console.log(`📄 Documento: ${doc.id}`, doc.data());
-//         });
-//     } catch (error) {
-//         console.error("❌ Error obteniendo datos:", error);
-//     }
-// });
-
 
 // Firebase Authentication
 
@@ -122,21 +92,6 @@ document.querySelector(".registerContainer").addEventListener("submit", register
 
 // Login
 
-// const loginUser = () => {
-//     const email = document.getElementById("loginEmail").value;
-//     const password = document.getElementById("loginassword").value;
-
-//     auth.signInWithEmailAndPassword(email, password)
-//         .then(userCredential => {
-//             console.log("✅ Usuario logueado:", userCredential.user);
-//             alert("Inicio de sesión exitoso");
-//         })
-//         .catch(error => {
-//             console.error("❌ Error en el login:", error.message);
-//             alert(error.message);
-//         });
-// };
-
 const loginUser = (event) => {
     event.preventDefault(); // Evita recargar la página
 
@@ -217,64 +172,7 @@ const loginWithGoogle = () => {
             console.error("❌ Error with Google Login:", error.message);
             alert(error.message);
         });
+    
 };
 
-// Authentication con Github
 
-// const provider = new firebase.auth.GithubAuthProvider();
-
-// // 🔥 Función de inicio de sesión
-// document.getElementById("loginGithub").addEventListener("click", function() {
-//   auth.signInWithPopup(provider)
-//     .then((result) => {
-//       console.log("Usuario autenticado:", result.user);
-//       document.getElementById("userInfo").innerText = `Bienvenido, ${result.user.displayName}`;
-//     })
-//     .catch((error) => {
-//       console.error("Error en autenticación:", error);
-//     });
-// });
-
-// // 🔥 Función de cerrar sesión
-// document.getElementById("logout").addEventListener("click", function() {
-//   auth.signOut().then(() => {
-//     console.log("Sesión cerrada");
-//     document.getElementById("userInfo").innerText = "";
-//   }).catch((error) => {
-//     console.error("Error al cerrar sesión:", error);
-//   });
-// });
-
-const provider = new firebase.auth.GithubAuthProvider();
-
-// 🔥 Función de inicio de sesión con GitHub
-document.getElementById("loginGithub").addEventListener("click", function() {
-  auth.signInWithPopup(provider)
-    .then((result) => {
-      const user = result.user;
-      console.log("Usuario autenticado:", user);
-
-      // Mostrar la información del usuario
-      document.getElementById("userInfo").innerText = `Bienvenido, ${user.displayName}`;
-      document.getElementById("logout").style.display = "block";
-
-      // 🔥 Alerta de bienvenida
-      alert(`¡Bienvenido, ${user.displayName}! Has iniciado sesión con GitHub.`);
-    })
-    .catch((error) => {
-      console.error("Error en autenticación:", error);
-      alert("Error en autenticación. Revisa la consola.");
-    });
-});
-
-// 🔥 Función de cerrar sesión
-document.getElementById("logout").addEventListener("click", function() {
-  auth.signOut().then(() => {
-    console.log("Sesión cerrada");
-    document.getElementById("userInfo").innerText = "";
-    document.getElementById("logout").style.display = "none";
-    alert("Has cerrado sesión.");
-  }).catch((error) => {
-    console.error("Error al cerrar sesión:", error);
-  });
-});
