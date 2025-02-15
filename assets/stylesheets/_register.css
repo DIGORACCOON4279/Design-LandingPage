@@ -169,7 +169,7 @@ input:-webkit-autofill {
     justify-content: center;
     align-items: center;
     gap:5px;
-    padding:10px 20px;
+    padding:13px 20px;
     margin-top: 50px;
     margin-bottom: 5px;
     background-color:var(--blueFive);
