@@ -57,7 +57,7 @@ const registerUser = (event) => {
 
             const messageRegistration = document.createElement("div");
             messageRegistration.classList.add("messageRegistration");
-            messageRegistration.innerHTML = `<p class="registration">Registration successful! Let’s get started ✨</p>`;
+            messageRegistration.innerHTML = `<p class="registration">Registration successful! Let’s get started</p>`;
 
 
             const messageNewRegistration = document.getElementById('messageNewRegistration'); // Reemplaza con el ID real de tu contenedor
@@ -166,13 +166,35 @@ const loginWithGoogle = () => {
         .then(result => {
             const user = result.user;
             console.log("✅ Logged in with Google:", user.email);
-            alert(`Welcome, ${user.displayName}! 🎉`);
+            // alert(`Welcome, ${user.displayName}! 🎉`);
+
+            const welcomeUser = document.createElement("div");
+            const message = document.createElement("p");
+
+            welcomeUser.classList.add("welcomeUser");
+            message.classList.add("message");
+            message.innerHTML = `Signed in successfully! Enjoy your session, ${user.displayName}! 🎉`;
+
+
+            const welcomeContainer = document.getElementById('welcomeContainer');
+            welcomeContainer.appendChild(welcomeUser);
+            welcomeContainer.style.opacity = "1";
+            welcomeContainer.style.visibility = "visible";
+            welcomeContainer.style.transform = "translate(-50%, -50%)";
+            welcomeContainer.style.zIndex = "9";
+
+            welcomeUser.appendChild(message);
+
+            setTimeout(() => {
+                welcomeContainer.remove();
+            }, 2500);
+
         })
         .catch(error => {
             console.error("❌ Error with Google Login:", error.message);
             alert(error.message);
         });
-    
+
 };
 
 
